@@ -2,7 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
-.gpk
+*.gpk
 # C extensions
 *.so
 
@@ -55,10 +55,10 @@ cover/
 *.mo
 *.pot
 #Data file stuff
-.cpg
-.dbf
-.shp
-.shx
+*.cpg
+*.dbf
+*.shp
+*.shx
 # Django stuff:
 *.log
 local_settings.py
