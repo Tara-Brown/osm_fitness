@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_436033d39e7eb540bcdc2827ca637ece {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <h1 style="position:absolute;z-index:100000;left:40vw" ><strong>OpenStreetMap Fitness Center Features (Spokane County, WA | 10-05-2025)</strong></h1>
+    
+            <div class="folium-map" id="map_436033d39e7eb540bcdc2827ca637ece" ></div>
+        
+    
+<div style="position: fixed; 
+            bottom: 50px; left: 50px; width: 150px; height: auto; 
+            border:2px solid grey; z-index:9999; font-size:14px;
+            background-color:white; padding: 5px;">
+    <p><strong>Legend</strong></p>
+    
+    <p><span style="color: red">&#11044;</span> polgon</p>
+    
+    <p><span style="color: blue">&#11044;</span> point</p>
+    
+</div>
+</body>
+<script>
+    
+    
+            var map_436033d39e7eb540bcdc2827ca637ece = L.map(
+                "map_436033d39e7eb540bcdc2827ca637ece",
+                {
+                    center: [47.67390452162162, -117.35126249189189],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae9292bef3c45b6f78874558b2037f1c = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ae9292bef3c45b6f78874558b2037f1c.addTo(map_436033d39e7eb540bcdc2827ca637ece);
+        
+    
+            var tile_layer_4776e9e5d3f6a59fdc67c97caf0fbcc3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4776e9e5d3f6a59fdc67c97caf0fbcc3.addTo(map_436033d39e7eb540bcdc2827ca637ece);
+        
+    
+            var feature_group_4331825e02071cf3d712a55c8da96052 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_4331825e02071cf3d712a55c8da96052.addTo(map_436033d39e7eb540bcdc2827ca637ece);
+        
+    
+            var feature_group_ebc2ddd7aca3e808ea44222fb398f355 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_2e2732cb132cf13bc3235ba4a8d5bf4a = L.circleMarker(
+                [47.716459, -117.438204],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_5c857981fca1f2fd59c400cc47e2e90a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d53ef25aacb2feff6d1e5ca07e82392f = $(`<div id="html_d53ef25aacb2feff6d1e5ca07e82392f" style="width: 100.0%; height: 100.0%;"><strong>Anytime fitness</strong>    </div>`)[0];
+                popup_5c857981fca1f2fd59c400cc47e2e90a.setContent(html_d53ef25aacb2feff6d1e5ca07e82392f);
+            
+        
+
+        circle_marker_2e2732cb132cf13bc3235ba4a8d5bf4a.bindPopup(popup_5c857981fca1f2fd59c400cc47e2e90a)
+        ;
+
+        
+    
+    
+            var circle_marker_fc5894f33a295fa94ab704d0ae8f7659 = L.circleMarker(
+                [47.669019, -117.2811544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_28b50b93c47e0c47f3e78884e3d82e65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30a923bd32941e4b0686e7c77dab37c1 = $(`<div id="html_30a923bd32941e4b0686e7c77dab37c1" style="width: 100.0%; height: 100.0%;"><strong>Apf</strong>    </div>`)[0];
+                popup_28b50b93c47e0c47f3e78884e3d82e65.setContent(html_30a923bd32941e4b0686e7c77dab37c1);
+            
+        
+
+        circle_marker_fc5894f33a295fa94ab704d0ae8f7659.bindPopup(popup_28b50b93c47e0c47f3e78884e3d82e65)
+        ;
+
+        
+    
+    
+            var circle_marker_54a6ad51f947b6e8151ba5507d91b04d = L.circleMarker(
+                [47.738195, -117.4852589],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_a73602bb8f7c4a89658c3be92edcf81e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a2543e148db93dea97decd6c9c42757 = $(`<div id="html_1a2543e148db93dea97decd6c9c42757" style="width: 100.0%; height: 100.0%;"><strong>Snap fitness</strong>    </div>`)[0];
+                popup_a73602bb8f7c4a89658c3be92edcf81e.setContent(html_1a2543e148db93dea97decd6c9c42757);
+            
+        
+
+        circle_marker_54a6ad51f947b6e8151ba5507d91b04d.bindPopup(popup_a73602bb8f7c4a89658c3be92edcf81e)
+        ;
+
+        
+    
+    
+            var circle_marker_e8f1fbffb61e3aefdca878d87dc412f7 = L.circleMarker(
+                [47.7382952, -117.485024],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_b9175271e11638114c060a004bb87658 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6133b01aacf7564210c997a9779da98 = $(`<div id="html_d6133b01aacf7564210c997a9779da98" style="width: 100.0%; height: 100.0%;"><strong>Snap fitness</strong>    </div>`)[0];
+                popup_b9175271e11638114c060a004bb87658.setContent(html_d6133b01aacf7564210c997a9779da98);
+            
+        
+
+        circle_marker_e8f1fbffb61e3aefdca878d87dc412f7.bindPopup(popup_b9175271e11638114c060a004bb87658)
+        ;
+
+        
+    
+    
+            var circle_marker_12e152552eb7838015d247ea4a2b6186 = L.circleMarker(
+                [47.6275577, -117.222417],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_b0d4c3403c52128cd35af7e383768913 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4d1522960b453656ec2f4dd7f218bc0 = $(`<div id="html_a4d1522960b453656ec2f4dd7f218bc0" style="width: 100.0%; height: 100.0%;"><strong>Snap fitness</strong>    </div>`)[0];
+                popup_b0d4c3403c52128cd35af7e383768913.setContent(html_a4d1522960b453656ec2f4dd7f218bc0);
+            
+        
+
+        circle_marker_12e152552eb7838015d247ea4a2b6186.bindPopup(popup_b0d4c3403c52128cd35af7e383768913)
+        ;
+
+        
+    
+    
+            var circle_marker_531d0385f45a2ada30455c2239b55860 = L.circleMarker(
+                [47.6645626, -117.2822625],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_b6492445dbffd962764d360151be70bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc20293f56951e49aee7a66ca02b5d42 = $(`<div id="html_cc20293f56951e49aee7a66ca02b5d42" style="width: 100.0%; height: 100.0%;"><strong>Unnamed</strong>    </div>`)[0];
+                popup_b6492445dbffd962764d360151be70bd.setContent(html_cc20293f56951e49aee7a66ca02b5d42);
+            
+        
+
+        circle_marker_531d0385f45a2ada30455c2239b55860.bindPopup(popup_b6492445dbffd962764d360151be70bd)
+        ;
+
+        
+    
+    
+            var circle_marker_86d13956141394d8b40ca4f8ead5fc55 = L.circleMarker(
+                [47.785837, -117.354744],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_ca3865b06c4e68b332258a081fbdaf4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95454d68c60ea2deb1bd5c4007ba4034 = $(`<div id="html_95454d68c60ea2deb1bd5c4007ba4034" style="width: 100.0%; height: 100.0%;"><strong>Snap fitness</strong>    </div>`)[0];
+                popup_ca3865b06c4e68b332258a081fbdaf4d.setContent(html_95454d68c60ea2deb1bd5c4007ba4034);
+            
+        
+
+        circle_marker_86d13956141394d8b40ca4f8ead5fc55.bindPopup(popup_ca3865b06c4e68b332258a081fbdaf4d)
+        ;
+
+        
+    
+    
+            var circle_marker_28ea5555f33be209b8e47f39e9d73d99 = L.circleMarker(
+                [47.6269866, -117.400927],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_e8411e70fa873e206280d5399c9f99e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3016145357e0aaca09d1ce6408c0e7db = $(`<div id="html_3016145357e0aaca09d1ce6408c0e7db" style="width: 100.0%; height: 100.0%;"><strong>Hot yoga</strong>    </div>`)[0];
+                popup_e8411e70fa873e206280d5399c9f99e6.setContent(html_3016145357e0aaca09d1ce6408c0e7db);
+            
+        
+
+        circle_marker_28ea5555f33be209b8e47f39e9d73d99.bindPopup(popup_e8411e70fa873e206280d5399c9f99e6)
+        ;
+
+        
+    
+    
+            var circle_marker_b2bf9491f6838f068d62f5be25b231db = L.circleMarker(
+                [47.6782615, -117.4366781],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_5c28e0d8af30b451d96430390de27a34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ff5ed7505dc10eb67d39a254dfcd402 = $(`<div id="html_1ff5ed7505dc10eb67d39a254dfcd402" style="width: 100.0%; height: 100.0%;"><strong>Planet fitness</strong>    </div>`)[0];
+                popup_5c28e0d8af30b451d96430390de27a34.setContent(html_1ff5ed7505dc10eb67d39a254dfcd402);
+            
+        
+
+        circle_marker_b2bf9491f6838f068d62f5be25b231db.bindPopup(popup_5c28e0d8af30b451d96430390de27a34)
+        ;
+
+        
+    
+    
+            var circle_marker_805b813a5db452524140a4b2166d6b4d = L.circleMarker(
+                [47.581146, -117.6822084],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_48f6a4dd640498b399ff17207e8d3009 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d660f69f487a036e010fcd2621a7aa0 = $(`<div id="html_5d660f69f487a036e010fcd2621a7aa0" style="width: 100.0%; height: 100.0%;"><strong>Snap fitness</strong>    </div>`)[0];
+                popup_48f6a4dd640498b399ff17207e8d3009.setContent(html_5d660f69f487a036e010fcd2621a7aa0);
+            
+        
+
+        circle_marker_805b813a5db452524140a4b2166d6b4d.bindPopup(popup_48f6a4dd640498b399ff17207e8d3009)
+        ;
+
+        
+    
+    
+            var circle_marker_ec0c483d21c63a61cc704f913033b582 = L.circleMarker(
+                [47.655011, -117.3949487],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_79d5d9c908157f77e75d5e2d346d1d23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9a0eb66185db8208c64ad07c6923a9e = $(`<div id="html_e9a0eb66185db8208c64ad07c6923a9e" style="width: 100.0%; height: 100.0%;"><strong>Impact fitness</strong>    </div>`)[0];
+                popup_79d5d9c908157f77e75d5e2d346d1d23.setContent(html_e9a0eb66185db8208c64ad07c6923a9e);
+            
+        
+
+        circle_marker_ec0c483d21c63a61cc704f913033b582.bindPopup(popup_79d5d9c908157f77e75d5e2d346d1d23)
+        ;
+
+        
+    
+    
+            var circle_marker_b2bf467e0a0d49b94d7a31f974e01311 = L.circleMarker(
+                [47.6721216, -117.4083394],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_141ebf453942ef98408180640b4f8153 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ce59a94b9665f9256b76f760b1c66e5 = $(`<div id="html_7ce59a94b9665f9256b76f760b1c66e5" style="width: 100.0%; height: 100.0%;"><strong>Crossfit</strong>    </div>`)[0];
+                popup_141ebf453942ef98408180640b4f8153.setContent(html_7ce59a94b9665f9256b76f760b1c66e5);
+            
+        
+
+        circle_marker_b2bf467e0a0d49b94d7a31f974e01311.bindPopup(popup_141ebf453942ef98408180640b4f8153)
+        ;
+
+        
+    
+    
+            var circle_marker_7ce2341d4c6e51a35bacffe16aa7783b = L.circleMarker(
+                [47.6669315, -117.3962791],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_32d4f46978a10adb8e4a44e487368d07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_974ba749877e32aeec643bcd52f0954d = $(`<div id="html_974ba749877e32aeec643bcd52f0954d" style="width: 100.0%; height: 100.0%;"><strong>Empire fitness</strong>    </div>`)[0];
+                popup_32d4f46978a10adb8e4a44e487368d07.setContent(html_974ba749877e32aeec643bcd52f0954d);
+            
+        
+
+        circle_marker_7ce2341d4c6e51a35bacffe16aa7783b.bindPopup(popup_32d4f46978a10adb8e4a44e487368d07)
+        ;
+
+        
+    
+    
+            var circle_marker_5cbe1a7d96257d43f9e2f1c94e550e82 = L.circleMarker(
+                [47.6799771, -117.2785391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_45aeed3ca3b53d1affb3aa44eaa9aabf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fecb7155a388beba99ea923e58729558 = $(`<div id="html_fecb7155a388beba99ea923e58729558" style="width: 100.0%; height: 100.0%;"><strong>Snap fitness</strong>    </div>`)[0];
+                popup_45aeed3ca3b53d1affb3aa44eaa9aabf.setContent(html_fecb7155a388beba99ea923e58729558);
+            
+        
+
+        circle_marker_5cbe1a7d96257d43f9e2f1c94e550e82.bindPopup(popup_45aeed3ca3b53d1affb3aa44eaa9aabf)
+        ;
+
+        
+    
+    
+            var circle_marker_2bca06f5097fba9552b4e5c7b949302c = L.circleMarker(
+                [47.6750101, -117.215327],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_7b66ccda83ae0349400319b06dc36e02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9e068bb693cf22c5d90d8cbd9173fad = $(`<div id="html_e9e068bb693cf22c5d90d8cbd9173fad" style="width: 100.0%; height: 100.0%;"><strong>Pure barre</strong>    </div>`)[0];
+                popup_7b66ccda83ae0349400319b06dc36e02.setContent(html_e9e068bb693cf22c5d90d8cbd9173fad);
+            
+        
+
+        circle_marker_2bca06f5097fba9552b4e5c7b949302c.bindPopup(popup_7b66ccda83ae0349400319b06dc36e02)
+        ;
+
+        
+    
+    
+            var circle_marker_10b422232a5d9d25323fad8cd6c96f4e = L.circleMarker(
+                [47.7654116, -117.4065612],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_f79f30c57d7c8a370d30a71921a219cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28392d5dce860f1e7aecc1a300f6ba15 = $(`<div id="html_28392d5dce860f1e7aecc1a300f6ba15" style="width: 100.0%; height: 100.0%;"><strong>The barre code - spokane</strong>    </div>`)[0];
+                popup_f79f30c57d7c8a370d30a71921a219cc.setContent(html_28392d5dce860f1e7aecc1a300f6ba15);
+            
+        
+
+        circle_marker_10b422232a5d9d25323fad8cd6c96f4e.bindPopup(popup_f79f30c57d7c8a370d30a71921a219cc)
+        ;
+
+        
+    
+    
+            var circle_marker_b9b7acec54384a1d9d509a9de24098db = L.circleMarker(
+                [47.6652537, -117.400887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_790750235db9bf299f972018065fa44c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54bb271e67d9830124a5d2c3cd2b6e6a = $(`<div id="html_54bb271e67d9830124a5d2c3cd2b6e6a" style="width: 100.0%; height: 100.0%;"><strong>Rudolf fitness center</strong>    </div>`)[0];
+                popup_790750235db9bf299f972018065fa44c.setContent(html_54bb271e67d9830124a5d2c3cd2b6e6a);
+            
+        
+
+        circle_marker_b9b7acec54384a1d9d509a9de24098db.bindPopup(popup_790750235db9bf299f972018065fa44c)
+        ;
+
+        
+    
+    
+            var circle_marker_ed098f7552e17bd03861ad86e2cd7990 = L.circleMarker(
+                [47.6817268, -117.2845016],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_7a530ae196ecff49cf866dc0b10dd493 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3caa324b2c65d60b804b05e7945a4829 = $(`<div id="html_3caa324b2c65d60b804b05e7945a4829" style="width: 100.0%; height: 100.0%;"><strong>Anytime fitness</strong>    </div>`)[0];
+                popup_7a530ae196ecff49cf866dc0b10dd493.setContent(html_3caa324b2c65d60b804b05e7945a4829);
+            
+        
+
+        circle_marker_ed098f7552e17bd03861ad86e2cd7990.bindPopup(popup_7a530ae196ecff49cf866dc0b10dd493)
+        ;
+
+        
+    
+    
+            var circle_marker_4d55f020f41414dbb259d8c79653e22c = L.circleMarker(
+                [47.6764059, -117.4114381],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_828d25b1e494b7cde40e1e7e7d474ce6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e160769056183d8de6519a1a01d50384 = $(`<div id="html_e160769056183d8de6519a1a01d50384" style="width: 100.0%; height: 100.0%;"><strong>Newborn cascao jiu jitsu</strong>    </div>`)[0];
+                popup_828d25b1e494b7cde40e1e7e7d474ce6.setContent(html_e160769056183d8de6519a1a01d50384);
+            
+        
+
+        circle_marker_4d55f020f41414dbb259d8c79653e22c.bindPopup(popup_828d25b1e494b7cde40e1e7e7d474ce6)
+        ;
+
+        
+    
+    
+            var circle_marker_dd6b99dc062b62eda3e075a0233b9bfb = L.circleMarker(
+                [47.6017636, -117.3694774],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_3ea80626d141d43ea3c248c9da480e09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa322f7cb62e30d52fe19f5db4a313d3 = $(`<div id="html_fa322f7cb62e30d52fe19f5db4a313d3" style="width: 100.0%; height: 100.0%;"><strong>Catalyst fitness</strong>    </div>`)[0];
+                popup_3ea80626d141d43ea3c248c9da480e09.setContent(html_fa322f7cb62e30d52fe19f5db4a313d3);
+            
+        
+
+        circle_marker_dd6b99dc062b62eda3e075a0233b9bfb.bindPopup(popup_3ea80626d141d43ea3c248c9da480e09)
+        ;
+
+        
+    
+    
+            var circle_marker_4bad351c845f45db8c4ab6f05ca96ad9 = L.circleMarker(
+                [47.668337, -117.4181211],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_fed6f392ff4a30534f97ea5b7ec82cd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75cb5c4b4b16454f0d1349a002cbe3b5 = $(`<div id="html_75cb5c4b4b16454f0d1349a002cbe3b5" style="width: 100.0%; height: 100.0%;"><strong>Shala living yoga</strong>    </div>`)[0];
+                popup_fed6f392ff4a30534f97ea5b7ec82cd7.setContent(html_75cb5c4b4b16454f0d1349a002cbe3b5);
+            
+        
+
+        circle_marker_4bad351c845f45db8c4ab6f05ca96ad9.bindPopup(popup_fed6f392ff4a30534f97ea5b7ec82cd7)
+        ;
+
+        
+    
+    
+            var circle_marker_f2b5d76bb3cabf18e6ead4aeaa691dda = L.circleMarker(
+                [47.7446032, -117.4059144],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_1bf12c475e11d706dd8bd46616ee3e39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbc05600a3dbe4b5b4290b500c832236 = $(`<div id="html_cbc05600a3dbe4b5b4290b500c832236" style="width: 100.0%; height: 100.0%;"><strong>Club pilates</strong>    </div>`)[0];
+                popup_1bf12c475e11d706dd8bd46616ee3e39.setContent(html_cbc05600a3dbe4b5b4290b500c832236);
+            
+        
+
+        circle_marker_f2b5d76bb3cabf18e6ead4aeaa691dda.bindPopup(popup_1bf12c475e11d706dd8bd46616ee3e39)
+        ;
+
+        
+    
+    
+            var circle_marker_5ab0b9e17211f777f75ce6b7e5db380d = L.circleMarker(
+                [47.7434846, -117.4052168],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_9ea80495d288ed675b9fcfbb34d21131 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be404bb22cda0d69a069c9ab9a2a35b1 = $(`<div id="html_be404bb22cda0d69a069c9ab9a2a35b1" style="width: 100.0%; height: 100.0%;"><strong>Orangetheory fitness</strong>    </div>`)[0];
+                popup_9ea80495d288ed675b9fcfbb34d21131.setContent(html_be404bb22cda0d69a069c9ab9a2a35b1);
+            
+        
+
+        circle_marker_5ab0b9e17211f777f75ce6b7e5db380d.bindPopup(popup_9ea80495d288ed675b9fcfbb34d21131)
+        ;
+
+        
+    
+    
+            var circle_marker_5adcd7bf5e099cf7d09405590dc8b1b7 = L.circleMarker(
+                [47.743485, -117.4055274],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_d7ba5145d57c200aad412ba70cd4e0cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61269c63bb79f11e21ddf312dbc12444 = $(`<div id="html_61269c63bb79f11e21ddf312dbc12444" style="width: 100.0%; height: 100.0%;"><strong>Beyouthful hot yoga</strong>    </div>`)[0];
+                popup_d7ba5145d57c200aad412ba70cd4e0cb.setContent(html_61269c63bb79f11e21ddf312dbc12444);
+            
+        
+
+        circle_marker_5adcd7bf5e099cf7d09405590dc8b1b7.bindPopup(popup_d7ba5145d57c200aad412ba70cd4e0cb)
+        ;
+
+        
+    
+    
+            var circle_marker_36900bef6d4160f9e79893aa3d78c93f = L.circleMarker(
+                [47.7443749, -117.4017831],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_f356315d681e79f1c5b7b1131ed48efd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1f30bc154160d616c20111d96cc1b7e = $(`<div id="html_f1f30bc154160d616c20111d96cc1b7e" style="width: 100.0%; height: 100.0%;"><strong>Team pilates</strong>    </div>`)[0];
+                popup_f356315d681e79f1c5b7b1131ed48efd.setContent(html_f1f30bc154160d616c20111d96cc1b7e);
+            
+        
+
+        circle_marker_36900bef6d4160f9e79893aa3d78c93f.bindPopup(popup_f356315d681e79f1c5b7b1131ed48efd)
+        ;
+
+        
+    
+    
+            var circle_marker_8e124a2b0ca21ca23ef949487c163856 = L.circleMarker(
+                [47.6573222, -117.2913627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_f945cef09ab4b6acfa32d165d258742f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e9dc3a217b9825105774d261ee2ab18 = $(`<div id="html_8e9dc3a217b9825105774d261ee2ab18" style="width: 100.0%; height: 100.0%;"><strong>Forza fitness northwest</strong>    </div>`)[0];
+                popup_f945cef09ab4b6acfa32d165d258742f.setContent(html_8e9dc3a217b9825105774d261ee2ab18);
+            
+        
+
+        circle_marker_8e124a2b0ca21ca23ef949487c163856.bindPopup(popup_f945cef09ab4b6acfa32d165d258742f)
+        ;
+
+        
+    
+    
+            var circle_marker_62695d5c4eaea13e858632a366846bfe = L.circleMarker(
+                [47.6567188, -117.2266663],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_085b692dd2528df9111ba2832f9eb2b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a60d9052859e31226f0040b64b8451c1 = $(`<div id="html_a60d9052859e31226f0040b64b8451c1" style="width: 100.0%; height: 100.0%;"><strong>9 rounds</strong>    </div>`)[0];
+                popup_085b692dd2528df9111ba2832f9eb2b1.setContent(html_a60d9052859e31226f0040b64b8451c1);
+            
+        
+
+        circle_marker_62695d5c4eaea13e858632a366846bfe.bindPopup(popup_085b692dd2528df9111ba2832f9eb2b1)
+        ;
+
+        
+    
+    
+            var circle_marker_7ce9dbd78a07a1ff6e5c85362a489986 = L.circleMarker(
+                [47.6771508, -117.2308534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_41d017fdd34764c4f1c1b3a7e1c064e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40d0f8c91d6156c5d84ef5d7a9ec961e = $(`<div id="html_40d0f8c91d6156c5d84ef5d7a9ec961e" style="width: 100.0%; height: 100.0%;"><strong>Specialty training inc.</strong>    </div>`)[0];
+                popup_41d017fdd34764c4f1c1b3a7e1c064e9.setContent(html_40d0f8c91d6156c5d84ef5d7a9ec961e);
+            
+        
+
+        circle_marker_7ce9dbd78a07a1ff6e5c85362a489986.bindPopup(popup_41d017fdd34764c4f1c1b3a7e1c064e9)
+        ;
+
+        
+    
+    
+            var circle_marker_336f86281bda83b6c6db4329b514571f = L.circleMarker(
+                [47.5063988, -117.5672166],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_76b62ac306ffbbc04668d5e7532d79f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0097c330b6cd0b4e1e48b423cd2370e8 = $(`<div id="html_0097c330b6cd0b4e1e48b423cd2370e8" style="width: 100.0%; height: 100.0%;"><strong>Snap fitness</strong>    </div>`)[0];
+                popup_76b62ac306ffbbc04668d5e7532d79f0.setContent(html_0097c330b6cd0b4e1e48b423cd2370e8);
+            
+        
+
+        circle_marker_336f86281bda83b6c6db4329b514571f.bindPopup(popup_76b62ac306ffbbc04668d5e7532d79f0)
+        ;
+
+        
+    
+    
+            var circle_marker_a85e675069eff6de50faa568786ba23f = L.circleMarker(
+                [47.6559239, -117.2138281],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_cebd000488f4d21e9de3c8c1552dd78e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf3c027dccc274a4db730327b1527d43 = $(`<div id="html_bf3c027dccc274a4db730327b1527d43" style="width: 100.0%; height: 100.0%;"><strong>Unnamed</strong>    </div>`)[0];
+                popup_cebd000488f4d21e9de3c8c1552dd78e.setContent(html_bf3c027dccc274a4db730327b1527d43);
+            
+        
+
+        circle_marker_a85e675069eff6de50faa568786ba23f.bindPopup(popup_cebd000488f4d21e9de3c8c1552dd78e)
+        ;
+
+        
+    
+    
+            var circle_marker_795868beef4cd0025177b892c8425e25 = L.circleMarker(
+                [47.6546632, -117.4152862],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_c62e9f68a271384fce4ac6abea8d4750 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90f475ad55ec5a8a264a0057de74b186 = $(`<div id="html_90f475ad55ec5a8a264a0057de74b186" style="width: 100.0%; height: 100.0%;"><strong>Wild walls climbing gym</strong>    </div>`)[0];
+                popup_c62e9f68a271384fce4ac6abea8d4750.setContent(html_90f475ad55ec5a8a264a0057de74b186);
+            
+        
+
+        circle_marker_795868beef4cd0025177b892c8425e25.bindPopup(popup_c62e9f68a271384fce4ac6abea8d4750)
+        ;
+
+        
+    
+    
+            var circle_marker_01eb068d6a55f65cb2448a79f217305a = L.circleMarker(
+                [47.6616326, -117.1530412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_2d8f6917113be2eaf0241ff0b8fd25bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cb143284af310b97c578e1d624aff13 = $(`<div id="html_5cb143284af310b97c578e1d624aff13" style="width: 100.0%; height: 100.0%;"><strong>Liberty lake athletic west</strong>    </div>`)[0];
+                popup_2d8f6917113be2eaf0241ff0b8fd25bf.setContent(html_5cb143284af310b97c578e1d624aff13);
+            
+        
+
+        circle_marker_01eb068d6a55f65cb2448a79f217305a.bindPopup(popup_2d8f6917113be2eaf0241ff0b8fd25bf)
+        ;
+
+        
+    
+    
+            var circle_marker_c8300172fb04531480479b9839dafc67 = L.circleMarker(
+                [47.677714, -117.0893748],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_cd00ef8db4869cf051bffd455b6625b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a463bc9c07ef5e383434c847d5c2019 = $(`<div id="html_5a463bc9c07ef5e383434c847d5c2019" style="width: 100.0%; height: 100.0%;"><strong>Anytime fitness</strong>    </div>`)[0];
+                popup_cd00ef8db4869cf051bffd455b6625b8.setContent(html_5a463bc9c07ef5e383434c847d5c2019);
+            
+        
+
+        circle_marker_c8300172fb04531480479b9839dafc67.bindPopup(popup_cd00ef8db4869cf051bffd455b6625b8)
+        ;
+
+        
+    
+    
+            var circle_marker_7f10b0356c297670af9d5d8c3a9a4325 = L.circleMarker(
+                [47.678051, -117.0918675],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_a396bb3f4fc99ae11e38547203ddede0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf88bbb933108ac575185ec0db52d67f = $(`<div id="html_cf88bbb933108ac575185ec0db52d67f" style="width: 100.0%; height: 100.0%;"><strong>Black goat fitness</strong>    </div>`)[0];
+                popup_a396bb3f4fc99ae11e38547203ddede0.setContent(html_cf88bbb933108ac575185ec0db52d67f);
+            
+        
+
+        circle_marker_7f10b0356c297670af9d5d8c3a9a4325.bindPopup(popup_a396bb3f4fc99ae11e38547203ddede0)
+        ;
+
+        
+    
+    
+            var circle_marker_881381d1d27913773951fd572a49fcbe = L.circleMarker(
+                [47.6292663, -117.3698466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_c5f81f03ed2a704be7af54653797a3b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f701f8a463d38f87b578769649ba4b6 = $(`<div id="html_0f701f8a463d38f87b578769649ba4b6" style="width: 100.0%; height: 100.0%;"><strong>Jazzercise</strong>    </div>`)[0];
+                popup_c5f81f03ed2a704be7af54653797a3b3.setContent(html_0f701f8a463d38f87b578769649ba4b6);
+            
+        
+
+        circle_marker_881381d1d27913773951fd572a49fcbe.bindPopup(popup_c5f81f03ed2a704be7af54653797a3b3)
+        ;
+
+        
+    
+    
+            var circle_marker_4c576f448754c803ca43c967f75c5cb9 = L.circleMarker(
+                [47.6800475, -117.1117151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_aa524c5254fe8255d426b4335dd37d0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88dd454c332a8792976bdce8b519f737 = $(`<div id="html_88dd454c332a8792976bdce8b519f737" style="width: 100.0%; height: 100.0%;"><strong>Liberty lake fitness</strong>    </div>`)[0];
+                popup_aa524c5254fe8255d426b4335dd37d0a.setContent(html_88dd454c332a8792976bdce8b519f737);
+            
+        
+
+        circle_marker_4c576f448754c803ca43c967f75c5cb9.bindPopup(popup_aa524c5254fe8255d426b4335dd37d0a)
+        ;
+
+        
+    
+    
+            var circle_marker_e4aa8a30ce2f7e1acac6ca16e21ebe29 = L.circleMarker(
+                [47.589361, -117.563914],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ebc2ddd7aca3e808ea44222fb398f355);
+        
+    
+        var popup_e3d1068e05972baf5d768e4a38845aed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c01edd0f1a03a4e305e617254689e56 = $(`<div id="html_7c01edd0f1a03a4e305e617254689e56" style="width: 100.0%; height: 100.0%;"><strong>Anytime fitness</strong>    </div>`)[0];
+                popup_e3d1068e05972baf5d768e4a38845aed.setContent(html_7c01edd0f1a03a4e305e617254689e56);
+            
+        
+
+        circle_marker_e4aa8a30ce2f7e1acac6ca16e21ebe29.bindPopup(popup_e3d1068e05972baf5d768e4a38845aed)
+        ;
+
+        
+    
+    
+            feature_group_ebc2ddd7aca3e808ea44222fb398f355.addTo(map_436033d39e7eb540bcdc2827ca637ece);
+        
+    
+            var layer_control_3a4b6c4188c14a196c61fd667d7131d3_layers = {
+                base_layers : {
+                    "ESRI Aerial Imagery" : tile_layer_ae9292bef3c45b6f78874558b2037f1c,
+                    "Positron" : tile_layer_4776e9e5d3f6a59fdc67c97caf0fbcc3,
+                },
+                overlays :  {
+                    "polygon" : feature_group_4331825e02071cf3d712a55c8da96052,
+                    "point" : feature_group_ebc2ddd7aca3e808ea44222fb398f355,
+                },
+            };
+            let layer_control_3a4b6c4188c14a196c61fd667d7131d3 = L.control.layers(
+                layer_control_3a4b6c4188c14a196c61fd667d7131d3_layers.base_layers,
+                layer_control_3a4b6c4188c14a196c61fd667d7131d3_layers.overlays,
+                {
+  "position": "bottomright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_436033d39e7eb540bcdc2827ca637ece);
+
+        
+    
+            tile_layer_ae9292bef3c45b6f78874558b2037f1c.addTo(map_436033d39e7eb540bcdc2827ca637ece);
+        
+    
+            tile_layer_4776e9e5d3f6a59fdc67c97caf0fbcc3.addTo(map_436033d39e7eb540bcdc2827ca637ece);
+        
+    
+            feature_group_4331825e02071cf3d712a55c8da96052.addTo(map_436033d39e7eb540bcdc2827ca637ece);
+        
+    
+            feature_group_ebc2ddd7aca3e808ea44222fb398f355.addTo(map_436033d39e7eb540bcdc2827ca637ece);
+        
+</script>
+</html>
