@@ -1,0 +1,1 @@
+{"version": 0.6, "generator": "Overpass API 0.7.62.8 e802775f", "osm3s": {"timestamp_osm_base": "2025-11-09T03:00:20Z", "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."}, "elements": [{"type": "node", "id": 3448694852, "lat": 40.8390279, "lon": -78.3504422, "tags": {"leisure": "park", "name": "Brisbin Dam"}}]}
