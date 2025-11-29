@@ -326,40 +326,48 @@ def process_state(state_fips, cities_gdf):
         print(f"Error in state {state_fips}: {e}")
         return None
 
-# ---------------- Load data & run ----------------
-print("Loading counties and places...")
-counties_gdf = gpd.read_file(COUNTY_URL).to_crs(equal_area_crs)
-state_fips_list = sorted([s for s in counties_gdf["STATEFP"].unique() if s not in EXCLUDED_STATEFPS])
+def main():
+    print("Loading counties and places...")
+    counties_gdf = gpd.read_file(COUNTY_URL).to_crs(equal_area_crs)
+    state_fips_list = sorted([s for s in counties_gdf["STATEFP"].unique() 
+                              if s not in EXCLUDED_STATEFPS])
 
-if TEST_MODE:
-    print(f"TEST MODE: running on {TEST_STATES}")
-    state_fips_list = [s for s in state_fips_list if s in TEST_STATES]
+    if TEST_MODE:
+        print(f"TEST MODE: running on {TEST_STATES}")
+        state_fips_list = [s for s in state_fips_list if s in TEST_STATES]
 
-city_gdfs = []
-for fips in state_fips_list:
-    url = PLACE_BASE_URL.format(statefp=fips.zfill(2))
-    try:
-        gdf = gpd.read_file(url)
-        gdf["statefp"] = fips
-        gdf = gdf.to_crs(equal_area_crs)
-        city_gdfs.append(gdf)
-        print(f"Loaded places for state {fips}")
-    except Exception as e:
-        print(f"Failed to load places for state {fips}: {e}")
+    city_gdfs = []
+    for fips in state_fips_list:
+        url = PLACE_BASE_URL.format(statefp=fips.zfill(2))
+        try:
+            gdf = gpd.read_file(url)                  # ← read once
+            gdf["statefp"] = fips                      # ← add state FIPS
+            gdf = gdf.to_crs(equal_area_crs)           # ← reproject once
+            city_gdfs.append(gdf)
+            print(f"Loaded places for state {fips}")
+        except Exception as e:
+            print(f"Failed to load places for state {fips}: {e}")
 
-if not city_gdfs:
-    raise RuntimeError("No place data loaded")
+    if not city_gdfs:
+        raise RuntimeError("No place data loaded")
 
-cities_gdf = pd.concat(city_gdfs, ignore_index=True)
+    cities_gdf = pd.concat(city_gdfs, ignore_index=True)
+    print(f"All place boundaries loaded: {len(cities_gdf)} cities total")
 
-# ---------------- Parallel execution ----------------
-if __name__ == "__main__":
-    max_workers = 4  # Safe default; increase to 5-6 if you have 64GB+ RAM
+    # ---------------- Parallel execution ----------------
+    max_workers = 8  # Hellgate gives you 8 CPUs → use them all
     print(f"Starting processing of {len(state_fips_list)} states with {max_workers} workers...")
+
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
-        futures = [executor.submit(process_state, fips, cities_gdf) for fips in state_fips_list]
+        futures = [executor.submit(process_state, fips, cities_gdf) 
+                   for fips in state_fips_list]
         for future in as_completed(futures):
             result = future.result()
             if result:
                 print(f"Completed state {result}")
+
     print("All done! Output in:", output_dir)
+
+
+if __name__ == "__main__":
+    main()
