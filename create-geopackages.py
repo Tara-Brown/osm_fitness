@@ -8,6 +8,7 @@ import osmnx as ox
 from shapely.geometry import shape, box
 from shapely.ops import unary_union
 from shapely.validation import make_valid
+from shapely.geometry.base import BaseGeometry
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime
 import warnings
@@ -18,7 +19,7 @@ equal_area_crs = "EPSG:5070"   # Albers Equal Area Conic - accurate area
 web_crs = "EPSG:4326"          # WGS84 lat/lon
 meter_crs = "EPSG:3857"        # Web Mercator - good for meters & OSM
 today = datetime.today().strftime("%Y-%m-%d")
-output_dir = "unified_geopackages_"
+output_dir = "unified_geopackages_indoor"
 os.makedirs(output_dir, exist_ok=True)
 
 TEST_MODE = False
@@ -41,8 +42,8 @@ EXCLUDED_STATEFPS = {"02", "15", "60", "66", "69", "72", "78"}  # AK, HI, territ
 # Tiling & OSM settings
 MAX_TILE_AREA_KM2 = 20.0        # Reduced for reliability
 OSM_REQUEST_TIMEOUT = 30
-OSM_MAX_RETRIES = 3
-OSM_RETRY_BACKOFF = 2.0
+OSM_MAX_RETRIES = 1
+OSM_RETRY_BACKOFF = 1.5
 TILE_SLEEP = 0.4                # Polite delay between OSM tiles
 
 # Indoor proxy size
@@ -61,18 +62,104 @@ def safe_area(geom):
     except Exception:
         return 0.0
 
-def safe_clip(gdf, mask):
-    """Robust clipping that falls back to overlay on failure."""
-    if gdf.empty or mask.empty:
-        return gpd.GeoDataFrame(geometry=[], crs=gdf.crs)
-    try:
-        return gpd.clip(gdf, mask)
-    except Exception:
+# ---------------- helpers to handle shapely vs geopandas emptiness ----------------
+
+def is_geom_empty(obj):
+    """
+    Return True if obj is empty.
+    Works for:
+      - GeoDataFrame / GeoSeries: uses .empty (pandas)
+      - Shapely geometry: uses .is_empty
+      - None: True
+      - other objects: fallback to False
+    """
+    if obj is None:
+        return True
+    # GeoDataFrame / GeoSeries / pandas objects
+    if hasattr(obj, "empty"):
         try:
-            mask_gdf = gpd.GeoDataFrame(geometry=[mask], crs=gdf.crs) if not isinstance(mask, gpd.GeoDataFrame) else mask
-            return gpd.overlay(gdf, mask_gdf, how="intersection")
+            return bool(obj.empty)
         except Exception:
-            return gdf[gdf.intersects(mask)]
+            # defensive fallback
+            pass
+    # shapely geometry
+    if isinstance(obj, BaseGeometry):
+        return bool(obj.is_empty)
+    return False
+
+def to_gdf_mask(mask, target_crs):
+    """
+    Convert a mask (shapely geometry or GeoDataFrame/GeoSeries) to a single-row GeoDataFrame
+    in target_crs. If mask is already a GeoDataFrame/GeoSeries, it will be returned (reprojected).
+    """
+    if mask is None:
+        return gpd.GeoDataFrame(geometry=[], crs=target_crs)
+    if isinstance(mask, gpd.GeoDataFrame):
+        return mask.to_crs(target_crs)
+    if isinstance(mask, gpd.GeoSeries):
+        gdf = gpd.GeoDataFrame(geometry=mask.values, crs=mask.crs)
+        return gdf.to_crs(target_crs)
+    if isinstance(mask, BaseGeometry):
+        gdf = gpd.GeoDataFrame(geometry=[mask], crs=target_crs)
+        return gdf.to_crs(target_crs)
+    # unknown type -> empty
+    return gpd.GeoDataFrame(geometry=[], crs=target_crs)
+
+# ---------------- Robust safe_clip ----------------
+def safe_clip(gdf, mask):
+    """
+    Robust clipping that accepts:
+      - gdf: GeoDataFrame (expected)
+      - mask: can be GeoDataFrame, GeoSeries, shapely geometry, or None
+    Falls back to overlay, then to intersects-selection if overlay fails.
+    Always returns a GeoDataFrame in the gdf.crs (or web_crs if gdf has no crs).
+    """
+    # quick sanity
+    if gdf is None:
+        return gpd.GeoDataFrame(geometry=[], crs=getattr(gdf, "crs", None))
+    gdf_crs = getattr(gdf, "crs", None)
+
+    # If gdf is empty, nothing to do
+    if is_geom_empty(gdf):
+        return gpd.GeoDataFrame(geometry=[], crs=gdf_crs)
+
+    # Convert mask into a GeoDataFrame in same CRS as gdf for reliable overlay/clip
+    try:
+        mask_gdf = to_gdf_mask(mask, gdf_crs)
+    except Exception:
+        # fallback: create empty mask
+        mask_gdf = gpd.GeoDataFrame(geometry=[], crs=gdf_crs)
+
+    if is_geom_empty(mask_gdf):
+        # nothing to clip with -> return empty with same schema/CRS as gdf
+        return gpd.GeoDataFrame(columns=gdf.columns, geometry=[], crs=gdf_crs)
+
+    # Try gpd.clip first (fast)
+    try:
+        clipped = gpd.clip(gdf, mask_gdf)
+        clipped = clipped.set_crs(gdf_crs, allow_override=True)
+        return clipped
+    except Exception as e_clip:
+        # fallback to overlay
+        try:
+            # ensure both are same CRS
+            left = gdf.to_crs(gdf_crs)
+            right = mask_gdf.to_crs(gdf_crs)
+            over = gpd.overlay(left, right, how="intersection")
+            over = over.set_crs(gdf_crs, allow_override=True)
+            return over
+        except Exception as e_over:
+            # final fallback: keep features whose geometry intersects any mask geometry
+            try:
+                # Build unary_union of mask geometries for faster intersects tests
+                mask_union = unary_union([geom for geom in mask_gdf.geometry if geom is not None])
+                subset = gdf[gdf.geometry.intersects(mask_union)]
+                subset = subset.set_crs(gdf_crs, allow_override=True)
+                return subset
+            except Exception as e_final:
+                # give up - return empty with original columns/CRS
+                return gpd.GeoDataFrame(columns=gdf.columns, geometry=[], crs=gdf_crs)
+
 
 def fetch_parkserve_features(state_fips):
     features = []
@@ -130,7 +217,7 @@ def osm_query_with_retries(tags, polygon_ll):
     attempt = 0
     while attempt < OSM_MAX_RETRIES:
         try:
-            gdf = ox.geometries_from_polygon(polygon_ll, tags)
+            gdf = ox.features_from_polygon(polygon_ll, tags)
             if gdf is None or gdf.empty:
                 return gpd.GeoDataFrame(geometry=[], crs=web_crs)
             gdf = gdf.set_crs(web_crs, allow_override=True)
@@ -355,7 +442,7 @@ def main():
     print(f"All place boundaries loaded: {len(cities_gdf)} cities total")
 
     # ---------------- Parallel execution ----------------
-    max_workers = 8  # Hellgate gives you 8 CPUs → use them all
+    max_workers = 4  # Hellgate gives you 8 CPUs → use them all
     print(f"Starting processing of {len(state_fips_list)} states with {max_workers} workers...")
 
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
