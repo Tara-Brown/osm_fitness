@@ -12,6 +12,8 @@ from shapely.geometry.base import BaseGeometry
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime
 import warnings
+import argparse
+import sys
 warnings.filterwarnings("ignore", message="invalid value encountered in area", category=RuntimeWarning)
 
 # ---------------- CONFIG ----------------
@@ -19,7 +21,7 @@ equal_area_crs = "EPSG:5070"   # Albers Equal Area Conic - accurate area
 web_crs = "EPSG:4326"          # WGS84 lat/lon
 meter_crs = "EPSG:3857"        # Web Mercator - good for meters & OSM
 today = datetime.today().strftime("%Y-%m-%d")
-output_dir = "unified_geopackages_indoor"
+output_dir = "unified_geopackages_no_missing"
 os.makedirs(output_dir, exist_ok=True)
 
 TEST_MODE = False
@@ -35,6 +37,10 @@ PARKSERVE_CONDITION = "(park_designation = 'LP' OR park_designation = 'LREC')"
 parks_tags = {"leisure": ["park", "pitch", "sports_centre"]}
 gym_tags = {"leisure": ["fitness_centre", "sports_hall"]}
 bldg_tags = {"building": True}
+biz_tags = {
+        "amenity": True, "shop": True, "office": True
+    }
+failed_cities = {}
 
 # Exclude non-contiguous
 EXCLUDED_STATEFPS = {"02", "15", "60", "66", "69", "72", "78"}  # AK, HI, territories
@@ -42,8 +48,8 @@ EXCLUDED_STATEFPS = {"02", "15", "60", "66", "69", "72", "78"}  # AK, HI, territ
 # Tiling & OSM settings
 MAX_TILE_AREA_KM2 = 20.0        # Reduced for reliability
 OSM_REQUEST_TIMEOUT = 30
-OSM_MAX_RETRIES = 1
-OSM_RETRY_BACKOFF = 1.5
+OSM_MAX_RETRIES = 5  # Increase from 1
+OSM_RETRY_BACKOFF = 2.0  # Increase backoff
 TILE_SLEEP = 0.4                # Polite delay between OSM tiles
 
 # Indoor proxy size
@@ -52,6 +58,23 @@ INDOOR_SIDE_M = INDOOR_SIDE_FT * 0.3048
 INDOOR_HALF_M = INDOOR_SIDE_M / 2.0
 
 # ---------------- Utility functions ----------------
+
+def safe_unary_union(gdf_or_geoms):
+    """Safely compute unary_union with geometry validation"""
+    if isinstance(gdf_or_geoms, gpd.GeoDataFrame):
+        geoms = [make_valid(g) for g in gdf_or_geoms.geometry if g is not None and not g.is_empty]
+    else:
+        geoms = [make_valid(g) for g in gdf_or_geoms if g is not None and not g.is_empty]
+    
+    if not geoms:
+        return None
+    
+    try:
+        return unary_union(geoms)
+    except Exception as e:
+        print(f"  Warning: unary_union failed: {e}")
+        return None
+    
 def safe_area(geom):
     if geom is None or geom.is_empty:
         return 0.0
@@ -186,7 +209,26 @@ def fetch_parkserve_features(state_fips):
         except Exception as e:
             print(f"ParkServe fetch error for {state_fips}: {e}")
             break
-    return features
+    
+    # Validate geometries before returning
+    if not features:
+        return []
+    
+    valid_features = []
+    for f in features:
+        if f.get("geometry"):
+            try:
+                geom = shape(f["geometry"])
+                if geom and not geom.is_empty:
+                    geom = make_valid(geom)
+                    if not geom.is_empty:
+                        f["geometry"] = geom.__geo_interface__
+                        valid_features.append(f)
+            except Exception:
+                continue
+    
+    return valid_features
+
 
 def tile_polygon_to_grid(geom, max_tile_area_km2=MAX_TILE_AREA_KM2):
     if geom is None or geom.is_empty:
@@ -213,7 +255,8 @@ def tile_polygon_to_grid(geom, max_tile_area_km2=MAX_TILE_AREA_KM2):
                 tiles.append(inter)
     return tiles
 
-def osm_query_with_retries(tags, polygon_ll):
+
+def osm_query_with_retries(tags, polygon_ll, state_fips=None, city_name=None):
     attempt = 0
     while attempt < OSM_MAX_RETRIES:
         try:
@@ -223,187 +266,376 @@ def osm_query_with_retries(tags, polygon_ll):
             gdf = gdf.set_crs(web_crs, allow_override=True)
             return gdf
         except Exception as e:
+            msg = str(e).lower()
+            if "no matching features" in msg or "no features" in msg or "empty" in msg:
+                return gpd.GeoDataFrame(geometry=[], crs=web_crs)
             attempt += 1
             wait = OSM_RETRY_BACKOFF ** attempt
-            print(f"  OSM query failed (attempt {attempt}): {e}. Retrying in {wait}s...")
+            print(f"  OSM query failed (attempt {attempt}) for {city_name} ({state_fips}): {e}. Retrying in {wait}s...")
             time.sleep(wait)
-    print("  OSM query failed after max retries")
-    return gpd.GeoDataFrame(geometry=[], crs=web_crs)
 
-def fetch_osm_by_tiling(tags, geom_proj, buffer_m=50):
+    # After max retries, log the failure
+    print(f"  OSM query failed after max retries for {city_name} ({state_fips})")
+    return None
+
+
+# Helper: single geometry conversion (avoid repeated GeoSeries creation)
+def geom_to_crs(geom, target_crs):
+    if geom is None or geom.is_empty:
+        return None
+    return gpd.GeoSeries([geom], crs=equal_area_crs).to_crs(target_crs).iloc[0]
+
+# ---------------- Optimized OSM fetch ----------------
+def fetch_osm_by_tiling(tags, geom_proj, state_fips=None, city_name=None, buffer_m=50):
+    """Fetch OSM features by tiling, optimized to avoid redundant CRS conversions."""
     if geom_proj is None or geom_proj.is_empty:
         return gpd.GeoDataFrame(geometry=[], crs=web_crs)
-    geom_m = gpd.GeoSeries([geom_proj], crs=equal_area_crs).to_crs(meter_crs).iloc[0]
-    tiles = tile_polygon_to_grid(geom_m, MAX_TILE_AREA_KM2)
+    
+    # Tile directly in equal-area CRS (meters)
+    tiles = tile_polygon_to_grid(geom_proj, MAX_TILE_AREA_KM2)
     parts = []
+
     for tile in tiles:
-        tile_buf = tile.buffer(buffer_m)
-        tile_ll = gpd.GeoSeries([tile_buf], crs=meter_crs).to_crs(web_crs).iloc[0]
-        gdf_tile = osm_query_with_retries(tags, tile_ll)
+        tile_buf = tile.buffer(buffer_m)  # buffer directly in equal-area CRS
+        # Convert buffered tile to WGS84 only when querying OSM
+        tile_ll = geom_to_crs(tile_buf, web_crs)
+        gdf_tile = osm_query_with_retries(
+            tags,
+            tile_ll,
+            state_fips=state_fips,
+            city_name=city_name
+        )
         if not gdf_tile.empty:
-            gdf_tile = safe_clip(gdf_tile, tile_ll)
-            parts.append(gdf_tile)
-        time.sleep(TILE_SLEEP)  # Be nice to OSM
+            gdf_tile['geometry'] = gdf_tile.geometry.apply(make_valid)
+            gdf_tile = gdf_tile[~gdf_tile.geometry.is_empty]
+            if not gdf_tile.empty:
+                # Clip in WGS84 first
+                gdf_tile = safe_clip(gdf_tile, tile_ll)
+                # Convert to equal-area CRS for union / area calculations
+                gdf_tile = gdf_tile.to_crs(equal_area_crs)
+                parts.append(gdf_tile)
+        time.sleep(TILE_SLEEP)
+
     if not parts:
-        return gpd.GeoDataFrame(geometry=[], crs=web_crs)
+        return gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
+
     combined = pd.concat(parts, ignore_index=True)
-    combined = combined.set_crs(web_crs, allow_override=True)
-    # Fast deduplication in meter CRS
-    combined_m = combined.to_crs(meter_crs)
-    combined_m = combined_m[~combined_m.geometry.duplicated()]
-    return combined_m.to_crs(web_crs)
+    combined = combined[~combined.geometry.duplicated()]
 
-# ---------------- Indoor handling (70 ft squares, clipped to building) ----------------
-def load_osm_indoor_for_city(city_geom_proj):
-    if city_geom_proj is None or city_geom_proj.is_empty:
-        return gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
+    # Clip back to original city boundary (equal-area CRS)
+    combined = safe_clip(combined, geom_proj)
+    return combined
 
-    city_geom_m = gpd.GeoSeries([city_geom_proj], crs=equal_area_crs).to_crs(meter_crs).iloc[0]
+def process_city_merged(city, state_fips, parks_ps):
+    """
+    Process a single city:
+      - ParkServe
+      - OSM parks, gyms, buildings, and other businesses
+      - Indoor gyms clipped to building and nearby businesses
+    Returns dict for final GeoDataFrame.
+    """
+    city_geom = city.geometry
+    city_name = city.get("NAME", city.get("NAME10", "Unknown"))
 
-    # Fetch data
-    gyms_ll = fetch_osm_by_tiling(gym_tags, city_geom_proj)
-    bldgs_ll = fetch_osm_by_tiling(bldg_tags, city_geom_proj)
+    # ---------------- ParkServe ----------------
+    ps_clipped = safe_clip(parks_ps, city_geom) if not parks_ps.empty else gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
 
-    if gyms_ll.empty or bldgs_ll.empty:
-        return gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)  # No buildings → no indoor
+    # ---------------- OSM Fetch ----------------
+    # Parks
+    osm_parks_gdf = fetch_osm_by_tiling(
+    parks_tags,
+    city_geom,
+    state_fips=state_fips,
+    city_name=city_name
+    )
+    osm_parks_gdf = osm_parks_gdf[osm_parks_gdf.geometry.type.isin(["Polygon", "MultiPolygon"])]
 
-    gyms_m = gyms_ll.to_crs(meter_crs)
-    bldgs_m = bldgs_ll.to_crs(meter_crs).reset_index(drop=True)
-    bldgs_m["bldg_idx"] = bldgs_m.index
+    # Gyms
+    gym_gdf = fetch_osm_by_tiling(
+        gym_tags,
+        city_geom,
+        state_fips=state_fips,
+        city_name=city_name
+    )
 
-    # Keep polygon gyms as-is
-    gym_poly = gyms_m[gyms_m.geometry.type.isin(["Polygon", "MultiPolygon"])].copy()
-    gym_pts = gyms_m[gyms_m.geometry.type == "Point"].copy()
+    # Buildings
+    bldg_gdf = fetch_osm_by_tiling(
+        bldg_tags,
+        city_geom,
+        state_fips=state_fips,
+        city_name=city_name
+    )
 
-    indoor_geoms = []
+    # Other businesses
+    biz_gdf = fetch_osm_by_tiling(
+        biz_tags,
+        city_geom,
+        state_fips=state_fips,
+        city_name=city_name
+    )
 
-    # Handle point gyms inside buildings
-    if not gym_pts.empty:
-        joined = gpd.sjoin(gym_pts, bldgs_m[["geometry", "bldg_idx"]], how="left", predicate="within")
-        for _, row in joined.iterrows():
-            if pd.isna(row["bldg_idx"]):
-                continue  # Not inside any building
-            pt = row.geometry
-            bldg_geom = bldgs_m.loc[row["bldg_idx"]].geometry
-            square = box(pt.x - INDOOR_HALF_M, pt.y - INDOOR_HALF_M,
-                         pt.x + INDOOR_HALF_M, pt.y + INDOOR_HALF_M)
-            indoor_zone = square.intersection(bldg_geom)
-            if not indoor_zone.is_empty:
-                indoor_geoms.append({
-                    "geometry": indoor_zone,
-                    "gym_name": row.get("name"),
-                    "source": "osm_point_in_building"
-                })
+    # Validate geometries
+    for gdf in [osm_parks_gdf, gym_gdf, bldg_gdf, biz_gdf]:
+        if not gdf.empty:
+            gdf['geometry'] = gdf.geometry.apply(make_valid)
+            gdf = gdf[~gdf.geometry.is_empty]
+    
+    # Separate gyms into points and polygons
+    if not gym_gdf.empty:
+        gdf_gym_points = gym_gdf[gym_gdf.geometry.type.isin(["Point", "MultiPoint"])].copy()
+        gdf_gym_polys = gym_gdf[gym_gdf.geometry.type.isin(["Polygon", "MultiPolygon"])].copy()
+    else:
+        gdf_gym_points = gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
+        gdf_gym_polys = gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
+    
+    # Convert all to meter CRS for distance/clip operations
+    gdf_gym_points = gdf_gym_points.to_crs(meter_crs)
+    gdf_gym_polys = gdf_gym_polys.to_crs(meter_crs)
+    gdf_bldgs = bldg_gdf.to_crs(meter_crs)
+    gdf_biz = biz_gdf.to_crs(meter_crs)
 
-    # Add polygon gyms
-    if not gym_poly.empty:
-        for _, row in gym_poly.iterrows():
-            indoor_geoms.append({
-                "geometry": row.geometry,
-                "gym_name": row.get("name"),
-                "source": "osm_polygon"
-            })
+    # Assign building IDs for gym/building join
+    gdf_bldgs = gdf_bldgs.reset_index(drop=True)
+    gyms_in_bldg = gpd.sjoin(gdf_gym_points, gdf_bldgs[["geometry"]], how="inner", predicate="within")
+    gyms_in_bldg.rename(columns={"index_right": "building_id"}, inplace=True)
 
-    if not indoor_geoms:
-        return gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
+    biz_in_bldg = gpd.sjoin(gdf_biz, gdf_bldgs[["geometry"]], how="inner", predicate="within")
 
-    indoor_gdf = gpd.GeoDataFrame(indoor_geoms, crs=meter_crs)
-    indoor_gdf = safe_clip(indoor_gdf, city_geom_m)
-    indoor_gdf = indoor_gdf[~indoor_gdf.geometry.is_empty]
-    return indoor_gdf.to_crs(equal_area_crs)
+    # Handle dynamic naming of the building index column
+    join_col = None
+    for col in biz_in_bldg.columns:
+        if col.startswith("index_") or col.endswith("_right"):
+            join_col = col
+            break
+    
+    if join_col is None:
+        raise KeyError("Could not find building index column in business join result")
+    
+    # Group businesses by building ID
+    biz_in_bldg.rename(columns={join_col: "building_id"}, inplace=True)
+    biz_grouped = biz_in_bldg.groupby("building_id")
 
-# ---------------- OSM Parks ----------------
-def get_osm_parks_for_city(city_geom_proj):
-    parks_ll = fetch_osm_by_tiling(parks_tags, city_geom_proj)
-    if parks_ll.empty:
-        return gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
-    parks_poly = parks_ll[parks_ll.geometry.type.isin(["Polygon", "MultiPolygon"])]
-    if parks_poly.empty:
-        return gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
-    parks_proj = parks_poly.to_crs(equal_area_crs)
-    city_gdf = gpd.GeoDataFrame(geometry=[city_geom_proj], crs=equal_area_crs)
-    clipped = safe_clip(parks_proj, city_gdf)
-    return clipped[~clipped.geometry.is_empty]
+    # --- 7. Create indoor zones for point-based gyms ---
+    zones = []
+    half = INDOOR_HALF_M
+    
+    for idx, row in gyms_in_bldg.iterrows():
+        pt = row.geometry
+        bldg_geom = gdf_bldgs.loc[row["building_id"]].geometry
+    
+        # Create 61x61 ft square, clipped to building
+        x, y = pt.x, pt.y
+        square = box(x - half, y - half, x + half, y + half)
+        zone = square.intersection(bldg_geom)
+    
+        # Clip by nearby businesses in same building
+        if row["building_id"] in biz_grouped.groups:
+            biz_points = biz_grouped.get_group(row["building_id"]).geometry
+            if not biz_points.empty:
+                min_dist = biz_points.distance(pt).min()
+                if pd.notna(min_dist) and min_dist > 0:
+                    half_dist = min(min_dist / 2.0, half)
+                    zone = zone.intersection(pt.buffer(half_dist)).intersection(bldg_geom)
+    
+        # Preserve attributes from the original point
+        zones.append({
+            "geometry": zone,
+            "gym_name": row.get("name", None),
+        })
+    
+    # Create GeoDataFrame with explicit geometry column
+    if zones:
+        gdf_zones = gpd.GeoDataFrame(zones, crs=meter_crs, geometry='geometry')
+    else:
+        gdf_zones = gpd.GeoDataFrame(geometry=[], crs=meter_crs)
+
+   # Convert CRS once
+    if not gdf_zones.empty:
+        indoor_gdf = gdf_zones.to_crs(equal_area_crs)
+    else:
+        indoor_gdf = gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
+
+    if not gdf_gym_polys.empty:
+        gym_polys = gdf_gym_polys.to_crs(equal_area_crs)
+    else:
+        gym_polys = gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
+
+    # Clip everything in one consistent way
+    if not indoor_gdf.empty:
+        indoor_gdf = safe_clip(indoor_gdf, city_geom)
+        indoor_gdf = indoor_gdf[~indoor_gdf.geometry.is_empty]
+
+    if not gym_polys.empty:
+        gym_polys = safe_clip(gym_polys, city_geom)
+        gym_polys = gym_polys[~gym_polys.geometry.is_empty]
+
+        # Standardize columns
+        gym_polys = gym_polys[['geometry'] + (['name'] if 'name' in gym_polys else [])].copy()
+        gym_polys.rename(columns={'name': 'gym_name'}, inplace=True)
+        if 'gym_name' not in gym_polys:
+            gym_polys['gym_name'] = None
+
+    # Combine
+    if not gym_polys.empty:
+        indoor_gdf = pd.concat([indoor_gdf, gym_polys], ignore_index=True)
+
+    
+    # Ensure we have a valid GeoDataFrame
+    if indoor_gdf.empty:
+        indoor_gdf = gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
+    else:
+        indoor_gdf = indoor_gdf.set_crs(equal_area_crs, allow_override=True)
+
+
+    # ---------------- Unions and areas ----------------
+    components = []
+
+    for layer in (ps_clipped, osm_parks_gdf, indoor_gdf):
+        if not layer.empty:
+            components.append(safe_unary_union(layer))
+
+    unified_geom = safe_unary_union(components) if components else None
+    area_total = safe_area(unified_geom)
+    to_4326_gdf = lambda gdf: gdf.to_crs(web_crs) if not gdf.empty else None
+    # Convert to WGS84 for saving
+    to4326 = lambda geom: geom_to_crs(geom, web_crs) if geom is not None else None
+
+    #add attributes
+
+    if not ps_clipped.empty:
+        ps_city = ps_clipped.copy()
+        ps_city["city_name"] = city_name
+        ps_city["state_fips"] = state_fips
+        ps_city["date"] = today
+    else:
+        ps_city = None
+
+    if not osm_parks_gdf.empty:
+        osm_city = gpd.clip(osm_parks_gdf, city_geom)
+
+        if not osm_city.empty:
+            osm_city = osm_city.copy()
+            osm_city["city_name"] = city_name
+            osm_city["state_fips"] = state_fips
+            osm_city["date"] = today
+    else:
+        osm_city = None
+
+    if not indoor_gdf.empty:
+        indoor_city = gpd.clip(indoor_gdf, city_geom)
+
+        if not indoor_city.empty:
+            indoor_city = indoor_city.copy()
+            indoor_city["city_name"] = city_name
+            indoor_city["state_fips"] = state_fips
+            indoor_city["date"] = today
+    else:
+        indoor_city = None
+
+
+
+    print("  Processed city:", city_name)
+    return {
+        "data": {
+            "geometry": to4326(unified_geom),
+            "area_m2_parks": area_total,
+            "date": today,
+            "state_fips": state_fips,
+            "city_name": city_name,
+        },
+        "layers": {
+            "parkserve": to_4326_gdf(ps_city),
+            "osm": to_4326_gdf(osm_city),
+            "indoor": to_4326_gdf(indoor_city),
+        }
+}
+
+
+
 
 # ---------------- Main per-state processing ----------------
-def process_state(state_fips, cities_gdf):
+def process_state(state_fips, cities_state, max_workers=None):
+    """
+    Process a state using parallel execution per city.
+    parks_ps: ParkServe features pre-fetched
+    """
     try:
         print(f"Processing state {state_fips}...")
+
+        # ---------------- ParkServe ----------------
         features = fetch_parkserve_features(state_fips)
         parks_ps = gpd.GeoDataFrame(
             geometry=[shape(f["geometry"]) for f in features if f.get("geometry")],
             crs=web_crs
         ).to_crs(equal_area_crs) if features else gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
 
-        cities_state = cities_gdf[cities_gdf["statefp"] == state_fips].copy()
+        if not parks_ps.empty:
+            parks_ps['geometry'] = parks_ps.geometry.apply(make_valid)
+            parks_ps = parks_ps[~parks_ps.geometry.is_empty]
+
         results = []
+        parkserve_layers = []
+        osm_layers = []
+        indoor_layers = []
 
-        for _, city in cities_state.iterrows():
-            city_geom = city.geometry
-            city_name = city.get("NAME", city.get("NAME10", "Unknown"))
+        # ---------------- Parallel city processing ----------------
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            futures = {executor.submit(process_city_merged, city, state_fips, parks_ps): idx 
+                       for idx, city in cities_state.iterrows()}
 
-            # ParkServe
-            ps_clipped = safe_clip(parks_ps, city_geom) if not parks_ps.empty else gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
-            ps_union = unary_union(ps_clipped.geometry) if not ps_clipped.empty else None
-            area_ps = safe_area(ps_union)
+            for future in as_completed(futures):
+                res = future.result()
+                results.append(res["data"])
 
-            # OSM Parks
-            osm_gdf = get_osm_parks_for_city(city_geom)
-            osm_union = unary_union(osm_gdf.geometry) if not osm_gdf.empty else None
-            area_osm = safe_area(osm_union)
+                if res["layers"]["parkserve"] is not None:
+                    parkserve_layers.append(res["layers"]["parkserve"])
+                if res["layers"]["osm"] is not None:
+                    osm_layers.append(res["layers"]["osm"])
+                if res["layers"]["indoor"] is not None:
+                    indoor_layers.append(res["layers"]["indoor"])
 
-            # Indoor gyms
-            indoor_gdf = load_osm_indoor_for_city(city_geom)
-            indoor_union = unary_union(indoor_gdf.geometry) if not indoor_gdf.empty else None
-            area_indoor = safe_area(indoor_union)
-
-            # Unified
-            components = [g for g in [ps_union, osm_union, indoor_union] if g is not None]
-            unified_geom = unary_union(components) if components else None
-            area_total = safe_area(unified_geom)
-
-            results.append({
-                "state_fips": state_fips,
-                "placefp": city.get("PLACEFP"),
-                "city_name": city_name,
-                "geometry": unified_geom,
-                "geometry_parkserve": ps_union,
-                "geometry_osm": osm_union,
-                "geometry_indoor": indoor_union,
-                "area_m2_parks": area_total,
-                "area_m2_parkserve": area_ps,
-                "area_m2_osm": area_osm,
-                "area_m2_indoor": area_indoor,
-                "date": today,
-            })
 
         if not results:
             print(f"No cities processed for state {state_fips}")
             return state_fips
 
-        state_gdf = gpd.GeoDataFrame(results, crs=equal_area_crs)
+        # ---------------- Build final GeoDataFrame ----------------
+        state_gdf = gpd.GeoDataFrame(results, crs="EPSG:4326")
 
-        # Save
+        # Save unified layer
         gpkg_path = os.path.join(output_dir, f"state_{state_fips}_unified.gpkg")
         csv_path = os.path.join(output_dir, f"state_{state_fips}_unified.csv")
 
-        # Unified layer
         unified = state_gdf.drop(columns=["geometry_parkserve", "geometry_osm", "geometry_indoor"], errors="ignore")
         unified = unified.set_geometry("geometry")
+        unified = unified.set_crs("EPSG:4326", allow_override=True)
         unified.to_file(gpkg_path, layer="unified_park_area", driver="GPKG")
 
-        # Source layers
-        for name, col in [("parkserve_geom", "geometry_parkserve"),
-                          ("osm_geom", "geometry_osm"),
-                          ("indoor_gyms", "geometry_indoor")]:
-            layer = state_gdf.drop(columns=[c for c in ["geometry", "geometry_parkserve", "geometry_osm", "geometry_indoor"] if c != col], errors="ignore")
-            layer = layer.rename(columns={col: "geometry"}).set_geometry("geometry")
-            layer = layer[~layer.geometry.is_empty]
-            if layer.empty:
-                layer = gpd.GeoDataFrame(geometry=[], crs=equal_area_crs)
-            layer.to_file(gpkg_path, layer=name, driver="GPKG")
+        # Save component layers
+        # ---------------- Save component layers ----------------
 
-        # CSV
+        if parkserve_layers:
+            parkserve_gdf = gpd.GeoDataFrame(
+                pd.concat(parkserve_layers, ignore_index=True),
+                crs="EPSG:4326"
+            )
+            parkserve_gdf.to_file(gpkg_path, layer="parkserve_geom", driver="GPKG")
+
+        if osm_layers:
+            osm_gdf = gpd.GeoDataFrame(
+                pd.concat(osm_layers, ignore_index=True),
+                crs="EPSG:4326"
+            )
+            osm_gdf.to_file(gpkg_path, layer="osm_geom", driver="GPKG")
+
+        if indoor_layers:
+            indoor_gdf = gpd.GeoDataFrame(
+                pd.concat(indoor_layers, ignore_index=True),
+                crs="EPSG:4326"
+            )
+            indoor_gdf.to_file(gpkg_path, layer="indoor_gyms", driver="GPKG")
+
+        # CSV summary
         state_gdf.drop(columns=["geometry", "geometry_parkserve", "geometry_osm", "geometry_indoor"], errors="ignore").to_csv(csv_path, index=False)
 
         print(f"State {state_fips} completed: {len(state_gdf)} places")
@@ -411,50 +643,107 @@ def process_state(state_fips, cities_gdf):
 
     except Exception as e:
         print(f"Error in state {state_fips}: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
+def load_cities_for_state(state_fips):
+    url = PLACE_BASE_URL.format(statefp=state_fips)
+    df = gpd.read_file(url)
+    df = df.to_crs(equal_area_crs)
+    df['NAME'] = df['NAME'].astype(str)
+
+    # normalize column names
+    df['PLACEFP'] = df.get('PLACEFP', df.get('PLACEFP10'))
+    return df
+
+def run_missing_cities(missing_df, max_workers=6):
+    """Run only the missing cities and append to the existing state gpkg."""
+    states = sorted(missing_df.state_fips.unique())
+
+    for state in states:
+        print(f"\n=== Processing missing cities for state {state} ===")
+
+        # Load all cities for that state
+        cities = load_cities_for_state(state)
+
+        # Filter only needed ones
+        miss = missing_df[missing_df.state_fips == state]
+
+        sub = cities[cities['NAME'].str.lower().isin(
+            miss.city_name.str.lower()
+        )].copy()
+
+        if sub.empty:
+            print(f"No matching cities found in TIGER for {state}")
+            continue
+
+        # Run your original state processor,
+        # but pass only the subset of cities
+        process_state(state, sub, max_workers=max_workers)
+
+        print(f"Finished missing subset for {state}")
+
+
 def main():
-    print("Loading counties and places...")
+    args = parse_args()
+
+    # Single state provided by SLURM array
+    state_fips = args.state[0].zfill(2)
+    print(f"Processing state {state_fips}")
+
+    print("Loading counties...")
     counties_gdf = gpd.read_file(COUNTY_URL).to_crs(equal_area_crs)
-    state_fips_list = sorted([s for s in counties_gdf["STATEFP"].unique() 
-                              if s not in EXCLUDED_STATEFPS])
 
-    if TEST_MODE:
-        print(f"TEST MODE: running on {TEST_STATES}")
-        state_fips_list = [s for s in state_fips_list if s in TEST_STATES]
+    if state_fips not in counties_gdf["STATEFP"].unique():
+        raise RuntimeError(f"State {state_fips} not found in county dataset")
 
-    city_gdfs = []
-    for fips in state_fips_list:
-        url = PLACE_BASE_URL.format(statefp=fips.zfill(2))
-        try:
-            gdf = gpd.read_file(url)                  # ← read once
-            gdf["statefp"] = fips                      # ← add state FIPS
-            gdf = gdf.to_crs(equal_area_crs)           # ← reproject once
-            city_gdfs.append(gdf)
-            print(f"Loaded places for state {fips}")
-        except Exception as e:
-            print(f"Failed to load places for state {fips}: {e}")
+    if state_fips in EXCLUDED_STATEFPS:
+        raise RuntimeError(f"State {state_fips} is excluded")
 
-    if not city_gdfs:
-        raise RuntimeError("No place data loaded")
+    print("Loading city/place boundaries...")
+    url = PLACE_BASE_URL.format(statefp=state_fips)
+    cities_state = gpd.read_file(url).to_crs(equal_area_crs)
+    cities_state["statefp"] = state_fips
 
-    cities_gdf = pd.concat(city_gdfs, ignore_index=True)
-    print(f"All place boundaries loaded: {len(cities_gdf)} cities total")
+    print(f"Loaded {len(cities_state)} cities for state {state_fips}")
 
-    # ---------------- Parallel execution ----------------
-    max_workers = 4  # Hellgate gives you 8 CPUs → use them all
-    print(f"Starting processing of {len(state_fips_list)} states with {max_workers} workers...")
+    # Direct single-state execution
+    print(f"Running process_state({state_fips}, cities_state)...")
+    result = process_state(state_fips, cities_state)
 
-    with ProcessPoolExecutor(max_workers=max_workers) as executor:
-        futures = [executor.submit(process_state, fips, cities_gdf) 
-                   for fips in state_fips_list]
-        for future in as_completed(futures):
-            result = future.result()
-            if result:
-                print(f"Completed state {result}")
+    print(f"Finished state {state_fips}: {result}")
+    if failed_cities:
+        print("Failed cities per state:")
+    for st, cities in failed_cities.items():
+        print(f"State {st}: {cities}")
 
-    print("All done! Output in:", output_dir)
+    # Save to CSV for retry later
+    pd.DataFrame([
+        {"state_fips": st, "city_name": city} 
+        for st, cities in failed_cities.items() 
+        for city in cities
+    ]).to_csv(f"failed_cities_to_retry_{state_fips}.csv", index=False)
 
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Build unified geopackages. Optionally restrict to specific states."
+    )
+
+    parser.add_argument(
+        "--state",
+        nargs="+",
+        help=(
+            "State FIPS codes to process. Examples:\n"
+            "  --state 30             (single)\n"
+            "  --state 30 32 56       (multiple)\n"
+            "  --state all            (process all states)\n"
+        ),
+        default=["all"]
+    )
+
+    return parser.parse_args()
 
 if __name__ == "__main__":
     main()

@@ -209,3 +209,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Extras
+*.tsv
+unified_geopackages/
+unified_geopackages_no_missing/
+unified_geopackages_/
+unified_geopackages_4326/
