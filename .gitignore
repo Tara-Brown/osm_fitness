@@ -219,3 +219,5 @@ unified_geopackages_/
 unified_geopackages_just_unified/
 unified_geopackages_4326/
 California/
+*.gz
+*.zip
