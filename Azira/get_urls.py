@@ -132,13 +132,15 @@ async def main():
     try:
         await login(page, user, pw)
         print("logged in")
+
         await click_load_more_button(page)
         print("loaded all entries")
+
         my_states = ['Colorado', 'Oklahoma', 'Utah', 'California', 'Nevada', "New", "Arizona", "North"]
         all_links = await get_links(page, my_states)
 
         print(f"found {len(all_links)} links")
-        # click "Load More" until the button is no longer visible
+
         with open("urls.txt", "w") as f:
             for item in all_links:
                 url = item[3]
