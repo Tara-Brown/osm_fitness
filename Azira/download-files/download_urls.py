@@ -3,6 +3,7 @@ import sys
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from turtle import end_fill
 from urllib.parse import urlparse, parse_qs, unquote
 import re
 import requests
@@ -15,6 +16,7 @@ MAX_WORKERS = 10
 TIMEOUT = 60          # seconds per request
 RETRIES = 5
 CHUNK_SIZE = 1024 * 1024  # 1 MB
+DOWNLOAD_COUNT = 0
 # ----------------------------------------
 
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -69,6 +71,7 @@ def download_one(url: str):
                 os.replace(tmp, out_path)
 
                 with lock:
+                    DOWNLOAD_COUNT += 1
                     print(f"[ok]   {os.path.basename(out_path)}")
                 return
 
@@ -81,8 +84,9 @@ def download_one(url: str):
 
 
 def main():
-    print(datetime.now())
-    print("Starting downloads...")
+    start = datetime.now()
+    print(f"Starting downloads at {start.isoformat()}...")
+
     if not os.path.exists(URLS_FILE):
         print(f"missing {URLS_FILE}")
         sys.exit(1)
@@ -101,6 +105,10 @@ def main():
         for _ in as_completed(futures):
             pass
 
+    end = datetime.now()
+    print(f"Downloaded {DOWNLOAD_COUNT} files.")
+    print(f"Finished at {end.isoformat()}, duration: {end - start}")
+    
 
 if __name__ == "__main__":
     main()
