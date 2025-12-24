@@ -10,4 +10,4 @@ source $(conda info --base)/etc/profile.d/conda.sh
 conda activate ox
 
 # Run script
-python /mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira/download_urls.py
+python /mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira/download-files/download_urls.py
