@@ -8,7 +8,7 @@ set -euo pipefail
 
 BASE="/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira"
 mkdir -p "$BASE/logs"
-cd "$BASE"
+cd "$BASE/download-files"
 
 # (Optional) activate conda / modules
 # source ~/miniconda3/etc/profile.d/conda.sh
