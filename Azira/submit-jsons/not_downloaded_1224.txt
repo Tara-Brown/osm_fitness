@@ -1,0 +1,2 @@
+/home/vince/Documents/SmartFires/osm_fitness/New_Mexico_700k(15)/Albuquerque_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_Mexico_700k(15)/Albuquerque_2.geojson
