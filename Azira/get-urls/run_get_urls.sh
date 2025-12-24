@@ -7,4 +7,4 @@ source /home/vince/miniconda3/etc/profile.d/conda.sh
 conda activate ox
 
 # Run script
-python /home/vince/Documents/SmartFires/osm_fitness/Azira/get_urls.py
+python /home/vince/Documents/SmartFires/osm_fitness/Azira/get-urls/get_urls.py

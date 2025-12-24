@@ -1,21 +1,29 @@
 #from playwright.sync_api import sync_playwright
 from playwright.async_api import async_playwright, expect, TimeoutError
-import json
 from pathlib import Path
-import time
-from datetime import date, timedelta
+from datetime import datetime
 import asyncio
-from urllib.parse import urljoin
-import os
 from urllib.parse import urlparse, parse_qs, unquote
 import re
-from pydoc import cli
 import subprocess
 
-# login info 
-user, pw = 'katrina.mullan@mso.umt.edu', 'wvp6rau6rqb_bwy1EYT!'
-url = 'https://pinnacle.azira.com/'
 
+# ---------------CONFIG----------------------
+# Azira login info 
+USER, PW = 'katrina.mullan@mso.umt.edu', 'wvp6rau6rqb_bwy1EYT!'
+URL = 'https://pinnacle.azira.com/'
+
+# states to download
+MY_STATES = ['Colorado', 'Oklahoma', 'Utah', 'California', 'Nevada', "New", "Arizona", "North"]
+# my_states = None   # all states
+
+# url file locations
+LOCAL_URL_FILE = '/home/vince/Documents/SmartFires/osm_fitness/Azira/get-urls/urls.txt'
+REMOTE_URL_FILE =  "vc149353@um:/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira/get-urls/urls.txt"
+
+# ssh key for hellgate
+HELLGATE_SSH_KEY = "/home/vince/.ssh/um_vpn"
+#----------------------------------------------
 
 async def start_browser(headless=False):
     playwright = await async_playwright().start()
@@ -37,7 +45,7 @@ async def start_browser(headless=False):
     }
 
 async def login(page, user, pw):
-    await page.goto(url) 
+    await page.goto(URL) 
     await page.get_by_role("textbox", name="Email Address").fill(user)
     await page.get_by_role("textbox", name="Password").fill(pw)
     await page.get_by_role("button", name="Log in").click()
@@ -129,40 +137,38 @@ async def main():
     browser_handle = await start_browser(headless=True)
     page = browser_handle["page"]
 
+    print(datetime.now())
+
     try:
-        await login(page, user, pw)
-        print("logged in")
-
+        # get all links from the page
+        print("Logging in...")
+        await login(page, USER, PW)
+        print("Loading all rows...")
         await click_load_more_button(page)
-        print("loaded all entries")
+        print("Extracting download links...")
+        all_links = await get_links(page, MY_STATES)
 
-        my_states = ['Colorado', 'Oklahoma', 'Utah', 'California', 'Nevada', "New", "Arizona", "North"]
-        all_links = await get_links(page, my_states)
-
-        print(f"found {len(all_links)} links")
-
+        # write to file
         with open("urls.txt", "w") as f:
             for item in all_links:
-                url = item[3]
-                f.write(f"{url}\n")
-        print("urls written to urls.txt")
+                curr_url = item[3]
+                f.write(f"{curr_url}\n")
+        print(f"{len(all_links)} urls written to urls.txt")
+
     finally:
         await browser_handle["context"].close()
         await browser_handle["browser"].close()
         await browser_handle["playwright"].stop() 
     
 
-    # transfer to HPC
-
-    local_file = "urls.txt"
-    remote =  "vc149353@um:/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira/urls.txt"
+    # transfer urls.txt to HPC
 
     subprocess.run(
         [
             "scp",
-            "-i", "/home/vince/.ssh/um_vpn",
-            local_file,
-            remote
+            "-i", HELLGATE_SSH_KEY,
+            LOCAL_URL_FILE,
+            REMOTE_URL_FILE
         ],
         check=True
     )
