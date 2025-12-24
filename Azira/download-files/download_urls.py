@@ -6,9 +6,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, parse_qs, unquote
 import re
 import requests
+from datetime import datetime
 
 # ---------------- config ----------------
-URLS_FILE = "/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira/urls.txt"
+URLS_FILE = "/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira/get-urls/urls.txt"
 OUT_DIR = "/mnt/beegfs/hellgate/home/vc149353/azira_downloads"
 MAX_WORKERS = 10
 TIMEOUT = 60          # seconds per request
@@ -80,6 +81,8 @@ def download_one(url: str):
 
 
 def main():
+    print(datetime.now())
+    print("Starting downloads...")
     if not os.path.exists(URLS_FILE):
         print(f"missing {URLS_FILE}")
         sys.exit(1)
@@ -91,7 +94,7 @@ def main():
         print("no URLs found")
         return
 
-    print(f"Downloading {len(urls)} files with {MAX_WORKERS} threads")
+    print(f"Attempting {len(urls)} files with {MAX_WORKERS} threads")
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
         futures = [ex.submit(download_one, url) for url in urls]
