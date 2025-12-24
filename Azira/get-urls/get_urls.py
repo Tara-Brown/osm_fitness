@@ -14,7 +14,8 @@ USER, PW = 'katrina.mullan@mso.umt.edu', 'wvp6rau6rqb_bwy1EYT!'
 URL = 'https://pinnacle.azira.com/'
 
 # states to download
-MY_STATES = ['Colorado', 'Oklahoma', 'Utah', 'California', 'Nevada', "New", "Arizona", "North"]
+MY_STATES = ['Colorado', 'Oklahoma', 'Utah', 'California', 'Nevada', "Arizona", "North", "New_Mexico", "New"] # north is north carolina
+TWO_WORD_STATES = ['New', 'South', 'Rhode', 'North']
 # my_states = None   # all states
 
 # url file locations
@@ -74,12 +75,10 @@ async def get_links(page, restrict_state=None):
         job_name = await rows.nth(i).locator("td:nth-child(2)").inner_text()
 
         if restrict_state:
-            for name_item in job_name.split("_")[::-1]:
-                if not name_item in ['a','b']:
-                    state = name_item
-                    break
-            if state not in restrict_state:
-                continue    
+            job_name_items = job_name.split("_")
+            state = job_name_items[0] if len(job_name_items) < 2 else ("_".join(job_name_items[-2:]) if job_name_items[-2] in TWO_WORD_STATES else job_name_items[-1])
+            if not (state in restrict_state):
+               continue 
 
         anchors = links_cell.locator("a")
         link_count = await anchors.count()
