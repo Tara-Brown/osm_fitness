@@ -3,17 +3,20 @@ import sys
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from turtle import end_fill
 from urllib.parse import urlparse, parse_qs, unquote
 import re
 import requests
+from datetime import datetime
 
 # ---------------- config ----------------
-URLS_FILE = "/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira/urls.txt"
+URLS_FILE = "/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Azira/get-urls/urls.txt"
 OUT_DIR = "/mnt/beegfs/hellgate/home/vc149353/azira_downloads"
 MAX_WORKERS = 10
 TIMEOUT = 60          # seconds per request
 RETRIES = 5
 CHUNK_SIZE = 1024 * 1024  # 1 MB
+DOWNLOAD_COUNT = 0
 # ----------------------------------------
 
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -31,6 +34,7 @@ def filename_from_url(url):
 
 
 def download_one(url: str):
+    global DOWNLOAD_COUNT       
     name = filename_from_url(url)
     out_path = os.path.join(OUT_DIR, name)
 
@@ -68,6 +72,7 @@ def download_one(url: str):
                 os.replace(tmp, out_path)
 
                 with lock:
+                    DOWNLOAD_COUNT += 1
                     print(f"[ok]   {os.path.basename(out_path)}")
                 return
 
@@ -80,6 +85,9 @@ def download_one(url: str):
 
 
 def main():
+    start = datetime.now()
+    print(f"Starting downloads at {start.isoformat()}...")
+
     if not os.path.exists(URLS_FILE):
         print(f"missing {URLS_FILE}")
         sys.exit(1)
@@ -91,13 +99,17 @@ def main():
         print("no URLs found")
         return
 
-    print(f"Downloading {len(urls)} files with {MAX_WORKERS} threads")
+    print(f"Attempting {len(urls)} files with {MAX_WORKERS} threads")
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
         futures = [ex.submit(download_one, url) for url in urls]
         for _ in as_completed(futures):
             pass
 
+    end = datetime.now()
+    print(f"Downloaded {DOWNLOAD_COUNT} files.")
+    print(f"Finished at {end.isoformat()}, duration: {end - start}")
+    
 
 if __name__ == "__main__":
     main()
