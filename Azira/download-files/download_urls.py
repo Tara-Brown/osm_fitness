@@ -34,6 +34,7 @@ def filename_from_url(url):
 
 
 def download_one(url: str):
+    global DOWNLOAD_COUNT       
     name = filename_from_url(url)
     out_path = os.path.join(OUT_DIR, name)
 
