@@ -1,0 +1,1147 @@
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Macon-Bibb County_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Macon-Bibb County_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Atlanta_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Savannah_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Savannah_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Alpharetta.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Cordele_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Cordele_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Albany.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Columbus.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Atlanta_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/East Point.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/St. Marys_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/St. Marys_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Douglas_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Douglas_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Carrollton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Augusta-Richmond County consolidated government (balance)_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Augusta-Richmond County consolidated government (balance)_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Cusseta-Chattahoochee County.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Marietta.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Lawrenceville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Warner Robins_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Warner Robins_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Dahlonega.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Athens-Clarke County unified government (balance)_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Athens-Clarke County unified government (balance)_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Atlanta_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Atlanta_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Sandy Springs.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Stonecrest.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Brunswick_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Brunswick_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Peachtree City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Milledgeville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Gainesville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Statesboro_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Statesboro_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Valdosta_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Valdosta_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Georgia_700k(30)/Decatur.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Lincoln_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Grand Island_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Grand Island_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Gering.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Hastings.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Omaha_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Lincoln_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Fremont.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Lincoln_2_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Lincoln_2_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Bellevue.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Beatrice.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Omaha_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Lincoln_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Wayne.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Papillion.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Omaha_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Nebraska_700k(16)/Omaha_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Independence.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/University City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Jefferson City_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Jefferson City_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Moberly_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Moberly_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/St. Joseph.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/West Plains_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/West Plains_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Kansas City_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Wildwood.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Joplin_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Joplin_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/St. Louis_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Lee_s Summit.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Kansas City_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/St. Charles.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/St. Louis_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/St. Peters.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Springfield_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Springfield_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Bellefontaine Neighbors.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Kansas City_3_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Kansas City_3_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Cape Girardeau.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Richmond.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Sikeston.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Rolla.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Liberty_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Liberty_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Branson_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Branson_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Kansas City_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Oakville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Creve Coeur_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Creve Coeur_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Columbia_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Columbia_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Raytown_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Missouri_700k(29)/Raytown_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Des Moines_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Muscatine.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Des Moines_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Waverly.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Ames.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Burlington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Indianola.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Dubuque.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Decorah.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Iowa City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Carroll.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Davenport.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/West Des Moines.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Cedar Falls.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Fort Dodge.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Council Bluffs.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Urbandale.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Keokuk.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Storm Lake.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Waukee_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Waukee_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Manchester.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Missouri Valley.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Waterloo.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Cedar Rapids.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Ankeny.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/North Liberty.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Altoona_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Altoona_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Sioux City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Marshalltown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Marion.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Iowa_700k(31)/Grimes.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Hartford.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Waterbury.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Norwich.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/West Hartford.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/New London.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/New Haven.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Norwalk.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Stamford.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Danbury.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Manchester.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Bridgeport.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Meriden.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Connecticut_700k(13)/Milford city (balance).geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fanning Springs_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fanning Springs_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Tallahassee_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Tampa_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Key West_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Key West_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Lakewood Ranch_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Lakewood Ranch_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Coconut Creek_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Coconut Creek_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Wellington_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Wellington_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Kissimmee_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Kissimmee_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Palm Beach Gardens_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Palm Beach Gardens_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Tallahassee_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Sanford_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Sanford_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fernandina Beach.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Horizon West_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Wellington_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Bradenton_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Bradenton_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Sarasota_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Sarasota_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Wesley Chapel_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Wesley Chapel_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Winter Garden_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Winter Garden_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Lehigh Acres_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Lehigh Acres_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Hollywood_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Hollywood_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Jacksonville_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Kendall_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Kendall_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Lauderhill_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Lauderhill_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fort Walton Beach.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Tarpon Springs_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Tarpon Springs_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Bonita Springs_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Bonita Springs_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Daytona Beach_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Daytona Beach_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Miami Gardens_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Miami Gardens_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Plantation_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Plantation_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/West Palm Beach_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/West Palm Beach_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Tampa_2_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Tampa_2_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Panama City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Winter Haven_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Winter Haven_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Miami Beach_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Miami Beach_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fort Myers_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fort Myers_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Temple Terrace_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Temple Terrace_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Port St. Joe.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Jacksonville_4_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Jacksonville_4_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fort Lauderdale.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Oviedo_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Oviedo_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Ocoee_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Ocoee_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/St. Petersburg_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Ocala_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Ocala_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Melbourne_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Melbourne_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Jacksonville_3_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Jacksonville_3_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Viera West_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Viera West_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/The Villages_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/The Villages_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Clearwater_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Clearwater_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/New Smyrna Beach_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/New Smyrna Beach_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Deltona_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Deltona_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Orlando_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Destin.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Coral Gables_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Coral Gables_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Cape Coral_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Cape Coral_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Boynton Beach_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Boynton Beach_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Miramar_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Miramar_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Miami_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Miami_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Avon Park_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Avon Park_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Pensacola.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Stuart_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Stuart_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Horizon West_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Horizon West_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Coral Springs_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Coral Springs_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Weston_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Weston_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/South Venice_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/South Venice_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fort Pierce_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Fort Pierce_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Largo_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Largo_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Davie_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Davie_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Kendale Lakes_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Kendale Lakes_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Orlando_2_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Orlando_2_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Gainesville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Gainesville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Jacksonville_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Boca Raton_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Boca Raton_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Pompano Beach_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Pompano Beach_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Dunedin_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Dunedin_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Port St. Lucie_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Florida_700k(75)/Port St. Lucie_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Yonkers.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Rochester.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Fairview.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Woodbury.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Hicksville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Milton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_8.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New Rochelle.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Uniondale.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Albany.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Elmira.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Irondequoit.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Babylon.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Coram.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Melville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Kingston.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Norwich.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_11.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Ithaca.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Greenlawn.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Holbrook.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Buffalo.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Southampton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_7.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Batavia.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Lake Placid.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Geneva.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Schenectady.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Cheektowaga.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Jefferson Valley-Yorktown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Utica.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Olean.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_9.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Syracuse.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Middletown_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Middletown_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Niskayuna.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Massena.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/North Hills.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Hempstead_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Hempstead_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Newark.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Tuckahoe.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Montauk.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_10.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Levittown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Port Washington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_6.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Binghamton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/West Seneca.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Loudonville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Poughkeepsie.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Plainview.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Oneida.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Mount Morris.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Auburn.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/New York_5.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Stony Brook.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Croton-on-Hudson.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_York_700k(62)/Watertown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Kalispell.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Havre.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Billings_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Glendive.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Bozeman_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Great Falls.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Bozeman_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Helena.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Missoula.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Butte-Silver Bow (balance).geojson
+/home/vince/Documents/SmartFires/osm_fitness/Montana_700k(11)/Belgrade.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Johnson City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Kingsport.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Clarksville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Nashville-Davidson metropolitan government _balance__2_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Nashville-Davidson metropolitan government _balance__2_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Smyrna_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Smyrna_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Brentwood.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Maryville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Memphis_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Bartlett.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Oak Ridge_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Oak Ridge_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Millington_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Millington_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Collierville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Knoxville_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Nashville-Davidson metropolitan government _balance__1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Memphis_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Chattanooga_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Farragut.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Murfreesboro.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Shelbyville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Shelbyville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Cookeville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Cookeville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Hendersonville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Tennesee_700k(21)/Hendersonville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Bangor.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Augusta.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Portland_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Portland_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Lewiston.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Brewer.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Waterville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Brunswick.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maine_700k(8)/Saco.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Gloucester.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Lynn.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Amherst Town.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Boston_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/New Bedford.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Worcester.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Fall River.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Burlington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Marlborough.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Peabody.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Pittsfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Wellesley.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Lowell.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Cambridge.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Plymouth.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Weymouth Town.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Boston_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Attleboro.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Springfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Lawrence.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Holyoke.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Barnstable Town.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Wakefield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Newton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Chicopee.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Palmer Town.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Framingham.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Quincy.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Brookline.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Boston_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Massachusetts_700k(31)/Winchester.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/Huntington_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/Huntington_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/Wheeling.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/White Sulphur Springs_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/White Sulphur Springs_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/Charleston_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/Charleston_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/Charles Town.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/Morgantown_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/West_Virginia_700k(6)/Morgantown_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Gary.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Indianapolis city (balance)_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Jeffersonville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Jeffersonville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Muncie.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Kokomo.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Fishers_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Fishers_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Columbus_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Columbus_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Indianapolis city (balance)_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/South Bend.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Indianapolis city (balance)_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Fort Wayne_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Elkhart.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Warsaw.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Anderson_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Anderson_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Indianapolis city (balance)_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Zionsville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Zionsville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Bloomington_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Bloomington_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Terre Haute_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Terre Haute_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Plymouth.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Hammond.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Carmel_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Carmel_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Merrillville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Merrillville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Valparaiso.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Greenfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Aurora.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Vincennes_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Vincennes_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Greenwood_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Greenwood_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Jasper_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Jasper_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Munster.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Evansville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Evansville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Indiana_700k(31)/Decatur.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Minnetonka.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Alexandria.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Roseville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Moorhead.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Cottage Grove.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Rochester_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Brooklyn Park.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Winona.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/St. Paul_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Minneapolis_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Northfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Lakeville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Mankato.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Shakopee.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Woodbury_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Maple Grove.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Hastings.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Elk River.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Worthington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Albert Lea.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Apple Valley.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Hutchinson.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Edina.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Faribault.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Prior Lake.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Fergus Falls.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Buffalo.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Oakdale.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Bloomington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Plymouth.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Burnsville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Duluth.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Fridley.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Marshall.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Brainerd.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/St. Cloud.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/St. Peter.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Waconia.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Bemidji.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/St. Louis Park.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Grand Rapids.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Eagan.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Coon Rapids.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Minneapolis_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Maplewood.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Sartell.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/St. Paul_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Ramsey_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Ramsey_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Rochester_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/New Ulm.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Oak Grove.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Rogers.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Chanhassen.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Lino Lakes.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Willmar.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Thief River Falls.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Blaine.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Andover.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Rosemount.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/St. Michael.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Minnesota_700k(61)/Stewartville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Emporia.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Gardner.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Liberal_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Liberal_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Leavenworth.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Wichita_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/El Dorado.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Overland Park_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Hutchinson_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Hutchinson_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Manhattan.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Overland Park_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Salina.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Topeka.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Lawrence.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Goodland.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Prairie Village.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Arkansas City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Hays_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Hays_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Kansas City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Olathe_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Shawnee.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kansas_700k(21)/Derby.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Bowling Green_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Bowling Green_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Maysville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Lexington-Fayette_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Louisville_Jefferson County metro government _balance_.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Henderson_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Henderson_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Owensboro_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Owensboro_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Florence.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Georgetown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Covington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Lexington-Fayette_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Ashland.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Louisville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Radcliff_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Kentucky_700k(13)/Radcliff_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Fredericksburg.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Alexandria.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Bull Run.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Hampton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Newport News.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Mount Vernon.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Fairfax.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Arlington_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Norfolk_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Portsmouth.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Oakton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Harrisonburg.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Chester.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Leesburg.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Blacksburg_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Blacksburg_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/McLean.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Radford_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Radford_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Suffolk.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Virginia Beach_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Richmond_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Springfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Lynchburg_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Lynchburg_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Virginia Beach_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Virginia Beach_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Reston.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Roanoke_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Roanoke_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Tuckahoe.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Norfolk_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Charlottesville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Annandale.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Burke.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Salem_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Salem_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Centreville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Danville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Danville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Chesapeake_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Richmond_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Virginia Beach_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Manassas.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Virginia_700k(39)/Woodlawn.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/The Woodlands_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Killeen_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Killeen_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fredericksburg_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fredericksburg_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/El Paso_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Lake Jackson.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Houston_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Houston_6.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Katy_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Katy_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/McAllen_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/McAllen_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Socorro.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Mission_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Mission_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Cedar Park_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Cedar Park_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Frisco_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Helotes_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Helotes_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Laredo_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Laredo_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_6_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_6_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_5_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_5_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Burleson_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Burleson_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Bryan_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Bryan_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Arlington_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Worth_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Antonio_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Cedar Hill_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Cedar Hill_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Port Arthur.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Atascocita_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Atascocita_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Rockwall.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Houston_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Mansfield_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Mansfield_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Carrollton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Flower Mound.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Pflugerville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Pflugerville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Corpus Christi_2_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Corpus Christi_2_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Wichita Falls.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Corpus Christi_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Edinburg_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Edinburg_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Rosenberg_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Rosenberg_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Sugar Land.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Lewisville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Hereford.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/El Paso_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Abilene_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Abilene_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/The Woodlands_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Weatherford_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Weatherford_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Marcos_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Marcos_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Houston_7.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Farmers Branch_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Farmers Branch_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Cavazos_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Cavazos_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/North Richland Hills.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Houston_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Conroe_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Conroe_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Victoria_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Victoria_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_7.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Leander_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Leander_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Little Elm_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Little Elm_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Palestine.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Angelo_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Angelo_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Tyler.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Antonio_4_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Antonio_4_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Allen_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Allen_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Temple_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Temple_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Irving.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Iowa Park_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Iowa Park_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Pharr_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Pharr_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_6.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Antonio_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Waco_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Waco_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Marshall.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Midland.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Richardson_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Richardson_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Georgetown_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Georgetown_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Frisco_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Garland.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Worth_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_5.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Lancaster.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Lubbock_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Houston_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Brownsville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Brownsville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Grand Prairie_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Grand Prairie_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Brushy Creek_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Brushy Creek_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Arlington_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Antonio_3_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/San Antonio_3_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Kerrville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Kerrville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Houston_5.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Worth_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Stockton_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Stockton_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_4_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_4_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/College Station_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/College Station_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Amarillo_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Bay City_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Bay City_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Baytown_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Baytown_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Ennis_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Ennis_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Wylie.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Waxahachie_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Waxahachie_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Longview.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Pearland.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Cibolo_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Cibolo_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_3_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_3_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Southlake_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Southlake_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Pampa.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Worth_4_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Fort Worth_4_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Houston_8.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Plano_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Beaumont.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Zapata_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Zapata_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/New Braunfels_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/New Braunfels_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Rowlett.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Paris.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Plano_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Austin_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Round Rock_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Round Rock_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_3_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Dallas_3_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Pasadena.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Texas City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/McKinney_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/El Paso_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Denton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Missouri City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Mesquite.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Texas_700k(124)/Odessa.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Madison_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Madison_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Montgomery_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Montgomery_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Birmingham_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Birmingham_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Mobile_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Mobile_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Gadsden_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Gadsden_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Tuscaloosa_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Tuscaloosa_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Huntsville_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Huntsville_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Saraland_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Saraland_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Hoover_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Hoover_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Florence_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Florence_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Daphne_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Daphne_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Prattville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Prattville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Dothan_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Dothan_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Jasper_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Jasper_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Auburn_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Auburn_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Selma_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Selma_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Decatur.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Alabama_700k(19)/Anniston.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Fort Smith.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/North Little Rock_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/North Little Rock_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Searcy_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Searcy_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Fayetteville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Bella Vista.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/West Memphis_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/West Memphis_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Texarkana_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Texarkana_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Little Rock.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Monticello_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Monticello_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Rogers_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Rogers_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Conway_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Conway_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Arkansas_700k(12)/Jonesboro.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_Hampshire_700k(6)/Lebanon.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_Hampshire_700k(6)/Portsmouth.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_Hampshire_700k(6)/Keene.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_Hampshire_700k(6)/Manchester.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_Hampshire_700k(6)/Nashua.geojson
+/home/vince/Documents/SmartFires/osm_fitness/New_Hampshire_700k(6)/Dover.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Dakota_700k(8)/Yankton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Dakota_700k(8)/Aberdeen.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Dakota_700k(8)/Spearfish.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Dakota_700k(8)/Sioux Falls.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Dakota_700k(8)/Brookings.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Dakota_700k(8)/Watertown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Dakota_700k(8)/Mitchell.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Dakota_700k(8)/Rapid City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Lafayette_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Lafayette_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Houma_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Houma_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Alexandria_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Alexandria_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/New Orleans_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Baker_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Baker_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Metairie_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Metairie_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Shreveport.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Baton Rouge_1_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Baton Rouge_1_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Minden_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Minden_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Lake Charles_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Lake Charles_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/St. George_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/St. George_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Baton Rouge_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Kenner_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Kenner_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Louisiana_700k(14)/Bossier City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Grayslake.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Evanston.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Mundelein.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Orland Park.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Chicago_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Skokie.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Elgin.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Mount Vernon_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Mount Vernon_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Rock Island.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Wheaton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Clinton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Waukegan.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/East Peoria.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Chicago_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Lake Forest.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Carol Stream.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Vernon Hills.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Aurora_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Bolingbrook.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Peoria.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Oak Lawn.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Libertyville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/St. Charles.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Woodridge.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Kankakee.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Alton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Addison.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Park Ridge.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Edwardsville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Schaumburg.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Carbondale_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Carbondale_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Belleville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Belleville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Downers Grove.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Bloomington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Normal.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Zion.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/South Holland.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Chicago_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Chicago_7.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Bartlett.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Lisle.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Charleston_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Charleston_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Naperville_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Springfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Lincoln.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Champaign.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Buffalo Grove.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Tinley Park.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Naperville_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Bourbonnais_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Bourbonnais_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Urbana_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Urbana_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/DeKalb.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Minooka.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Lake Zurich.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Dixon.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Oswego.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Plainfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Park Forest.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Crystal Lake.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Moline.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Burr Ridge.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Chicago_5.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Palatine.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Frankfort.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Quincy.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Cicero.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Aurora_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/New Lenox.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Columbia.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Chicago_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Glenview.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Rockford.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Arlington Heights.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/North Aurora.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Gurnee.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Yorkville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Lansing.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Joliet.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Decatur.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Mount Prospect.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Hoffman Estates.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/Chicago_6.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/St. Croix Falls.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Verona.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Brookfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Appleton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Oshkosh.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Onalaska.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Sun Prairie.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Richfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Madison_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Marshfield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Prairie du Sac.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Burlington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Beloit.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Wausau.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Sheboygan.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/La Crosse.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/West Bend.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Green Bay.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Eau Claire.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Pewaukee.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Chippewa Falls.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Fitchburg.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Waukesha_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Franklin.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Madison_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Wauwatosa.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Menomonie.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Mount Horeb.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/New Richmond.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Lake Geneva.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Antigo.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Superior_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Manitowoc.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Mequon.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Baraboo.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Waunakee.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/De Pere.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Racine.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Port Washington.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Janesville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Rice Lake.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Delafield.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Milwaukee_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Weston.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Milwaukee_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Oak Creek.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Superior_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Wisconsin Rapids.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Hudson.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/McFarland.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Milwaukee_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Waukesha_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Madison_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Kenosha.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Fort Atkinson.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Watertown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Kaukauna.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Plover.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Wisconsin_700k(59)/Howard.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Mount Pleasant_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Mount Pleasant_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Sumter_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Sumter_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Fort Mill_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Fort Mill_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Hilton Head Island_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Hilton Head Island_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Lexington_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Lexington_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Anderson.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Charleston_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/North Augusta_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/North Augusta_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Spartanburg.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Newberry_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Newberry_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Myrtle Beach_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Myrtle Beach_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Cayce.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Greenville_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Greenville_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Charleston_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Rock Hill.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Greenwood.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/North Charleston_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/North Charleston_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Columbia_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/South_Carolina_700k(18)/Columbia_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Dundalk.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Bowie_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Bowie_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Clinton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Odenton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Reisterstown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Rockville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Baltimore_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/North Bethesda.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Edgewood_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Edgewood_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Severna Park_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Severna Park_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Aberdeen_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Aberdeen_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Frederick.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Baltimore_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Ellicott City.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Baltimore_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Landover.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Gaithersburg.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Bethesda.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Silver Spring.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Chillum.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Easton_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Easton_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Westminster.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Mitchellville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Bel Air.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Germantown.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/College Park.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Salisbury_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Salisbury_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Columbia.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Waldorf_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Waldorf_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Olney.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Towson.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Maryland_700k(32)/Pasadena.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Philadelphia_4.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Connellsville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Park Forest Village.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Pittsburgh_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Pittsburgh_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Morrisville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/State College.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Hershey.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Wyomissing_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Wyomissing_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Murrysville.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Scranton.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Philadelphia_2.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Pen Argyl.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/St. Marys.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Kingston_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Kingston_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Jefferson Hills.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Lock Haven.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Punxsutawney.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Chester_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Chester_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Waynesboro.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Bala Cynwyd_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Bala Cynwyd_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/York_b.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/York_a.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Philadelphia_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Edgewood.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Harrisburg.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Bethel Park.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Williamsport.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Pennsylvania_700k(53)/Franklin.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Illinois_700k(83)/O-Fallon.geojson
