@@ -1,0 +1,3 @@
+/home/vince/Documents/SmartFires/osm_fitness/Washington_700k(50)/Kennewick.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Washington_700k(50)/Spokane_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Washington_DC_700k(3)/Washington_3.geojson

@@ -1,8 +1,3 @@
-/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Washington_DC_700k(3)/Washington_3.geojson
-/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Washington_700k(50)/Spokane_1.geojson
-/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Washington_700k(50)/Kennewick.geojson
-/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Wyoming_700k(6)/Cheyenne.geojson
-/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Wyoming_700k(6)/Riverton.geojson
-/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Wyoming_700k(6)/Gillette.geojson
-/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Wyoming_700k(6)/Laramie.geojson
-/mnt/beegfs/hellgate/home/vc149353/osm_fitness/Wyoming_700k(6)/Rock Springs.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Washington_DC_700k(3)/Washington_3.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Washington_700k(50)/Spokane_1.geojson
+/home/vince/Documents/SmartFires/osm_fitness/Washington_700k(50)/Kennewick.geojson
