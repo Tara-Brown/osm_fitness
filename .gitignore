@@ -223,3 +223,5 @@ unified_geopackages_*/
 output/
 *.gpkg
 *.geojson
+.DStore
+.DS_Store
